@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Юля Амелина](https://up.htmlacademy.ru/adaptive/18/user/966419).
-* Наставник: [Екатерина Комнатная](https://htmlacademy.ru/profile/id215761).
+* Наставник: [Сергей Шрамко](https://github.com/Shramkoweb).
 
 ---
 
