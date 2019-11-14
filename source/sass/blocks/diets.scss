@@ -1,0 +1,26 @@
+.diets {
+  background-color: #f2f2f2;
+  padding: 22px;
+
+  .diets__list {
+    padding: 0;
+    margin: 0;
+  }
+}
+
+.diets-item {
+  list-style: none;
+
+  .diets-item__title {
+    font-size: 24px;
+    line-height: 1.54;
+    text-transform: uppercase;
+
+    .diets-item__description {
+      font-family: "Arial";
+      font-size: 1 4px;
+      line-height: 1.29;
+      color: #444444;
+    }
+  }
+}
