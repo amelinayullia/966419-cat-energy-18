@@ -1,0 +1,20 @@
+.free-order {
+  background-image: url("/img/gift-photo-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  width: 280px;
+  height: 290px;
+  margin-top: 40px;
+
+  .free-order__image {
+    width: 56px;
+    height: 61px;
+  }
+
+  .free-order__description {
+    margin: 0;
+    margin-top: 64px;
+    color: #ffffff;
+    padding-left: 64px;
+    padding-right: 64px;
+  }
+}
