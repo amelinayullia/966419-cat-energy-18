@@ -1,83 +1,81 @@
-.diets-item {
-  list-style: none;
-  position: relative;
-
-  .diets-item__title {
-    font-family: "Oswald", "Arial", sans-serif;
-    font-size: 24px;
-    font-weight: normal;
-    line-height: 1.54;
-    text-transform: uppercase;
-    margin: 0;
-    padding-left: 70px;
-  }
-
-  .diets-item__description {
-    font-size: 14px;
-    color: #444444;
-    padding-top: 24px;
-  }
-
-  .diets-item__link {
-    font-family: "Oswald", "Arial", sans-serif;
-    line-height: 1;
-    color: #111111;
-    text-decoration: none;
-    text-transform: uppercase;
-    position: relative;
-  }
+.diets-item__title {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 1.54;
+  text-transform: uppercase;
+  margin: 0;
+  padding-left: 70px;
 }
 
-.diets-item--slim,
-.diets-item--fat {
-  &::before {
-    content: "";
-    width: 50px;
-    height: 51px;
-    background-color: #68b738;
-    position: absolute;
-    left: 20px;
-    border-radius: 50%;
-  }
-}
-
-.diets-item--slim {
-  &::after {
-    content: "";
-    background-image: url("/img/icon-cat-slim.svg");
-    background-repeat: no-repeat;
-    width: 35px;
-    height: 49px;
-    position: absolute;
-    left: 29px;
-    top: 21px;
-    background-position: center;
-  }
-}
-
-.diets-item--fat {
-  &::after {
-    content: "";
-    background-image: url("/img/icon-cat-pro.svg");
-    background-repeat: no-repeat;
-    width: 67px;
-    height: 28px;
-    position: absolute;
-    left: 12px;
-    top: 33px;
-    background-position: center;
-  }
+.diets-item__description {
+  font-size: 14px;
+  color: #444444;
+  padding-top: 24px;
 }
 
 .diets-item__link {
+  font-family: "Oswald", "Arial", sans-serif;
+  line-height: 1;
+  color: #111111;
+  text-decoration: none;
+  text-transform: uppercase;
+  position: relative;
+
   &::after {
     content: "";
-    background-image: url("/img/icon-right-arrow-long.svg");
+    background-image: url("../img/icon-right-arrow-long.svg");
     background-repeat: no-repeat;
     width: 25px;
     height: 12px;
     position: absolute;
     left: 95px;
     top: 5px;
+  }
+}
+
+.diets-item {
+  list-style: none;
+  position: relative;
+
+  &--slim,
+  &--fat {
+    &::before {
+      content: "";
+      width: 50px;
+      height: 51px;
+      background-color: #68b738;
+      position: absolute;
+      left: 20px;
+      border-radius: 50%;
+    }
+  }
+
+  &--slim {
+    &::after {
+      content: "";
+      background-image: url("../img/icon-cat-slim.svg");
+      background-repeat: no-repeat;
+      width: 35px;
+      height: 49px;
+      position: absolute;
+      left: 29px;
+      top: 21px;
+      background-position: center;
+    }
+  }
+
+  &--fat {
+    &::after {
+      content: "";
+      background-image: url("../img/icon-cat-pro.svg");
+      background-repeat: no-repeat;
+      width: 67px;
+      height: 28px;
+      position: absolute;
+      left: 12px;
+      top: 33px;
+      background-position: center;
+    }
   }
 }

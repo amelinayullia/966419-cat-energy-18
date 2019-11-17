@@ -1,5 +1,5 @@
 .free-order {
-  background-image: url("/img/gift-photo-mobile@1x.jpg");
+  background-image: url("../img/gift-photo-mobile@1x.jpg"), linear-gradient(to bottom, #68b738 305px, #ffffff 0, #ffffff);
   background-repeat: no-repeat;
   width: 280px;
   height: 290px;
@@ -8,6 +8,7 @@
   .free-order__image {
     width: 56px;
     height: 61px;
+    fill: #ffffff;
   }
 
   .free-order__description {
