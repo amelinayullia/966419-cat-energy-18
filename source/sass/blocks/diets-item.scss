@@ -38,44 +38,38 @@
   list-style: none;
   position: relative;
 
-  &--slim,
-  &--fat {
-    &::before {
-      content: "";
-      width: 50px;
-      height: 51px;
-      background-color: #68b738;
-      position: absolute;
-      left: 20px;
-      border-radius: 50%;
-    }
+  &::after {
+    content: "";
+    background-repeat: no-repeat;
+    background-position: center;
   }
 
-  &--slim {
-    &::after {
-      content: "";
-      background-image: url("../img/icon-cat-slim.svg");
-      background-repeat: no-repeat;
-      width: 35px;
-      height: 49px;
-      position: absolute;
-      left: 29px;
-      top: 21px;
-      background-position: center;
-    }
+  &--slim::before,
+  &--fat::before {
+    content: "";
+    width: 50px;
+    height: 50px;
+    background-color: #68b738;
+    position: absolute;
+    left: 20px;
+    border-radius: 50%;
   }
 
-  &--fat {
-    &::after {
-      content: "";
-      background-image: url("../img/icon-cat-pro.svg");
-      background-repeat: no-repeat;
-      width: 67px;
-      height: 28px;
-      position: absolute;
-      left: 12px;
-      top: 33px;
-      background-position: center;
-    }
+  &--slim::after {
+    background-image: url("../img/icon-cat-slim.svg");
+    width: 35px;
+    height: 49px;
+    left: 29px;
+    top: 21px;
+    position: absolute;
+  }
+
+  &--fat::after {
+    background-image: url("../img/icon-cat-pro.svg");
+    width: 67px;
+    height: 28px;
+    left: 12px;
+    top: 33px;
+    position: absolute;
   }
 }
