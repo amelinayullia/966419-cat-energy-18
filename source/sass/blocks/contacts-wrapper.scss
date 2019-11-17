@@ -1,0 +1,22 @@
+.contacts-wrapper {
+  padding: 31px 20px 26px 20px;
+
+  &--catalog,
+  &--form {
+    background-color: #f2f2f2;
+  }
+
+  .contacts-wrapper__invite {
+    font-family: "Oswald", "Arial", sans-serif;
+    line-height: 1.25;
+    text-align: left;
+    text-transform: uppercase;
+    margin: 0;
+  }
+
+  .contacts-wrapper__address {
+    line-height: 1.43;
+    color: #444444;
+    margin: 0;
+  }
+}
