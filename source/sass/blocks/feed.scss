@@ -3,6 +3,7 @@
   line-height: 1.25;
   font-weight: normal;
   text-transform: uppercase;
+  margin: 0;
 }
 
 .feed__info-list {
@@ -14,4 +15,8 @@
   font-size: 12px;
   line-height: 1.33;
   color: #444444;
+}
+
+.feed__description {
+  margin: 0;
 }
