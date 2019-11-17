@@ -1,0 +1,63 @@
+.form__label {
+  font-family: "Oswald", "Arial", sans-serif;
+  line-height: 1.13;
+  color: #222222;
+  text-transform: uppercase;
+  display: flex;
+  margin-bottom: 15px;
+  align-items: center;
+
+  &--checkbox,
+  &--radio {
+    padding-left: 45px;
+  }
+}
+
+.form__input {
+  font-family: "Oswald", "Arial", sans-serif;
+  line-height: 1.13;
+  color: #444444;
+  text-transform: uppercase;
+  padding: 15px;
+  margin-left: 15px;
+  border: 1px solid #cdcdcd;
+  flex-grow: 1;
+}
+
+.form__legend {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 24px;
+  line-height: 1;
+  padding-top: 30px;
+  margin-bottom: 30px;
+}
+
+.form__contacts,
+.form__comment,
+.form__additionally {
+  border: none;
+  padding: 0;
+}
+
+.form__textarea {
+  width: 100%;
+  min-height: 150px;
+  resize: none;
+  padding: 15px;
+  font-family: "Oswald", "Arial", sans-serif;
+  line-height: 1.13;
+  color: #444444;
+  text-transform: uppercase;
+  border: 1px solid #cdcdcd;
+}
+
+.form__button {
+  margin-top: 15px;
+  margin-bottom: 23px;
+}
+
+.form__attention {
+  font-size: 14px;
+  line-height: 1.14;
+  color: #444444;
+}
