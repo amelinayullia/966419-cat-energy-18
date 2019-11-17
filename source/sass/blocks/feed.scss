@@ -1,0 +1,17 @@
+.feed__title {
+  font-family: "Oswald", "Arial", sans-serif;
+  line-height: 1.25;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+.feed__info-list {
+  list-style: none;
+}
+
+.feed__info-category,
+.feed__info-value {
+  font-size: 12px;
+  line-height: 1.33;
+  color: #444444;
+}
