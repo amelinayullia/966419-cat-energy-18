@@ -3,7 +3,8 @@
 
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Кэт энерджи - Форма</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="preload" href="fonts/oswaldmedium.woff2" as="font" crossorigin="anonymous">
@@ -62,13 +63,13 @@
 
           <div class="form__program">
             <input class="form__radio" type="radio" name="slimming" id="slimming" checked>
-            <label class="form__label" for="slimming">Похудение</label>
+            <label class="form__label form__label--radio" for="slimming">Похудение</label>
 
             <input class="form__radio" type="radio" name="weight" id="weight">
-            <label class="form__label" for="weight">Набор массы</label>
+            <label class="form__label form__label--radio" for="weight">Набор массы</label>
 
             <input class="form__radio" type="radio" name="advice" id="advice">
-            <label class="form__label" for="advice">Не знаю (Нужен ваш совет)</label>
+            <label class="form__label form__label--radio" for="advice">Не знаю (Нужен ваш совет)</label>
           </div>
 
           <fieldset class="form__contacts">
@@ -93,16 +94,16 @@
             <legend class="form__legend">Дополнительно</legend>
 
             <input class="form__checkbox" type="checkbox" name="sweetener" id="sweetener" checked>
-            <label class="form__label" for="sweetener">Сахарозаменитель</label>
+            <label class="form__label form__label--checkbox" for="sweetener">Сахарозаменитель</label>
 
             <input class="form__checkbox" type="checkbox" name="water" id="water">
-            <label class="form__label" for="water">Питьевая вода</label>
+            <label class="form__label form__label--checkbox" for="water">Питьевая вода</label>
 
             <input class="form__checkbox" type="checkbox" name="milk" id="milk">
-            <label class="form__label" for="milk">Молоко</label>
+            <label class="form__label form__label--checkbox" for="milk">Молоко</label>
 
             <input class="form__checkbox" type="checkbox" name="vitamins" id="vitamins">
-            <label class="form__label" for="vitamins">Витамины</label>
+            <label class="form__label form__label--checkbox" for="vitamins">Витамины</label>
           </fieldset>
 
           <button class="form__button button" type="submit">Отправить заявку</button>
@@ -113,8 +114,10 @@
 
       <section class="contacts">
         <h2 class="visually-hidden">Контакты</h2>
-        <p class="contacts__invite">Приглашаем к сотрудничеству дилеров!</p>
-        <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+        <div class="contacts-wrapper contacts-wrapper--form">
+          <p class="contacts-wrapper__invite">Приглашаем к сотрудничеству дилеров!</p>
+          <p class="contacts-wrapper__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+        </div>
         <img class="contacts__map" src="../img/bg-map-mobile@1x.png" width="320" height="400" alt="Карта">
       </section>
 

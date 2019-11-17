@@ -7,4 +7,10 @@
 
 .catalog__list {
   list-style: none;
+  padding: 0;
+}
+
+.catalog__item {
+  padding-bottom: 25px;
+  border-bottom: 1px solid #ededed;
 }
