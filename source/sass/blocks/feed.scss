@@ -5,6 +5,16 @@
   text-transform: uppercase;
   margin: 0;
   padding-right: 30px;
+
+  @media (min-width: $bp-tablet) {
+    font-size: 20px;
+    line-height: 1;
+    max-width: 156px;
+    text-align: center;
+    padding: 0;
+    margin-top: 125px;
+    margin-bottom: 30px;
+  }
 }
 
 .feed__info-list {
@@ -17,10 +27,41 @@
   font-size: 12px;
   line-height: 1.33;
   color: #444444;
+
+  @media (min-width: $bp-tablet) {
+    font-size: 16px;
+    line-height: 1;
+    padding: 5px 0;
+  }
 }
 
 .feed__description {
   margin: 0;
   display: flex;
   justify-content: space-between;
+
+  @media (min-width: $bp-tablet) {
+    width: 250px;
+  }
+}
+
+.feed__image {
+  @media (min-width: $bp-tablet) {
+    min-width: 160px;
+    height: 170px;
+    position: absolute;
+    top: -40px;
+  }
+}
+
+.feed__link {
+  @media (min-width: $bp-tablet) {
+    margin-top: 30px;
+  }
+}
+
+.feed__info-item {
+  @media (min-width: $bp-tablet) {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
 }
