@@ -43,6 +43,10 @@
   @media (min-width: $bp-tablet) {
     width: 250px;
   }
+
+  @media (min-width: $bp-desktop) {
+    max-width: 170px;
+  }
 }
 
 .feed__image {

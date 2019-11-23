@@ -14,6 +14,11 @@
     line-height: 1;
     padding: 65px 0;
   }
+
+  @media (min-width: $bp-desktop) {
+    padding-top: 83px;
+    padding-bottom: 155px;
+  }
 }
 
 .catalog__list {
@@ -44,5 +49,9 @@
     padding: 38px;
     margin-bottom: 140px;
     position: relative;
+  }
+
+  @media (min-width: $bp-desktop) {
+    max-width: 245px;
   }
 }

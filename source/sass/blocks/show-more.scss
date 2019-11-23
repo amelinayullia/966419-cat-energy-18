@@ -13,6 +13,10 @@
     padding: 38px;
   }
 
+  @media (min-width: $bp-desktop) {
+    max-width: 245px;
+  }
+
   .show-more__cross {
     width: 31px;
     height: 31px;

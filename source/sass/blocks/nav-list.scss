@@ -25,6 +25,12 @@
     @media (min-width: $bp-desktop) {
       color: #ffffff;
     }
+
+    @media (min-width: $bp-desktop) {
+      &--desktop {
+        color: #111111;
+      }
+    }
   }
 
   .nav-list__item {
