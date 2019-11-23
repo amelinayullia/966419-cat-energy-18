@@ -16,8 +16,6 @@
 
   .logo-header__image {
     @media (min-width: $bp-tablet) {
-      background-image: url("../img/logo-tablet.svg");
-      background-repeat: no-repeat;
       width: 174px;
       height: 69px;
     }

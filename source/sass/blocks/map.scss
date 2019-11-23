@@ -1,15 +1,14 @@
-.contacts {
+.map {
+  border: none;
+
   @media (min-width: $bp-tablet) {
-    width: 100%;
     position: relative;
   }
 
-  .contacts__map {
-    border: none;
-
+  .map__image {
     @media (min-width: $bp-tablet) {
-      width: 768px;
       height: 400px;
+      width: 100%;
     }
 
     @media (min-width: $bp-desktop) {
