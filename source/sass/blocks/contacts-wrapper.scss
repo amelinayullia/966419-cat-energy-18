@@ -1,5 +1,21 @@
 .contacts-wrapper {
+  display: flex;
+  align-items: center;
   padding: 31px 20px 26px 20px;
+
+  @media (min-width: $bp-tablet) {
+    padding: 70px;
+    justify-content: space-between;
+    align-items: stretch;
+  }
+
+  @media (min-width: $bp-desktop) {
+    position: absolute;
+    top: 95px;
+    left: 100px;
+    background-color: #ffffff;
+    min-width: 570px;
+  }
 
   &--catalog,
   &--form {
@@ -9,14 +25,23 @@
   .contacts-wrapper__invite {
     font-family: "Oswald", "Arial", sans-serif;
     line-height: 1.25;
-    text-align: left;
     text-transform: uppercase;
     margin: 0;
+    padding-right: 20px;
+
+    @media (min-width: $bp-tablet) {
+      width: 154px;
+    }
   }
 
   .contacts-wrapper__address {
     line-height: 1.43;
     color: #444444;
     margin: 0;
+    font-size: 14px;
+
+    @media (min-width: $bp-tablet) {
+      width: 154px;
+    }
   }
 }

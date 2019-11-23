@@ -1,6 +1,11 @@
 .advantages-item {
   position: relative;
 
+  @media (min-width: $bp-tablet) {
+    max-width: 250px;
+    padding-right: 35px;
+  }
+
   &::before {
     content: "";
     background-repeat: no-repeat;
@@ -10,6 +15,12 @@
     left: 0;
     background-color: #68b738;
     background-position: center;
+
+    @media (min-width: $bp-tablet) {
+      top: 0;
+      width: 80px;
+      height: 80px;
+    }
   }
 
   &--leaf::before {
@@ -32,5 +43,10 @@
     margin: 0;
     padding-top: 5px;
     padding-bottom: 5px;
+
+    @media (min-width: $bp-tablet) {
+      padding: 0;
+      line-height: 1.5;
+    }
   }
 }

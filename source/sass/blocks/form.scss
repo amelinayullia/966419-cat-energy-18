@@ -28,7 +28,7 @@
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 24px;
   line-height: 1;
-  padding-top: 30px;
+  padding-top: 15px;
   margin-bottom: 30px;
 }
 
@@ -49,6 +49,7 @@
   color: #444444;
   text-transform: uppercase;
   border: 1px solid #cdcdcd;
+  margin-bottom: 15px;
 }
 
 .form__button {
@@ -60,4 +61,13 @@
   font-size: 14px;
   line-height: 1.14;
   color: #444444;
+  display: block;
+  text-align: center;
+}
+
+.form__introduction,
+.form__program {
+  border-bottom: 1px solid #ededed;
+  padding-top: 20px;
+  padding-bottom: 10px;
 }

@@ -4,10 +4,12 @@
   font-weight: normal;
   text-transform: uppercase;
   margin: 0;
+  padding-right: 30px;
 }
 
 .feed__info-list {
   list-style: none;
+  padding: 0;
 }
 
 .feed__info-category,
@@ -19,4 +21,6 @@
 
 .feed__description {
   margin: 0;
+  display: flex;
+  justify-content: space-between;
 }

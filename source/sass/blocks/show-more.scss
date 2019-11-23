@@ -1,8 +1,11 @@
 .show-more {
-  padding-bottom: 25px;
   border-bottom: 1px solid #ededed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 25px 0;
 
-  .show-more__button-cross {
+  .show-more__cross {
     width: 31px;
     height: 31px;
     fill: #222222;

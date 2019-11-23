@@ -1,10 +1,33 @@
 .intro {
-  background-image: url("../img/index-background-mobile@1x.jpg"), linear-gradient(to bottom, #68b738 305px, #ffffff 0, #ffffff);
+  background-image: url("../img/index-background-mobile@1x.jpg"),
+    linear-gradient(to bottom, #68b738 305px, #ffffff 0, #ffffff);
   background-repeat: no-repeat;
   color: #ffffff;
   text-align: center;
-  margin: 0 auto;
-  max-width: 320px;
+  min-height: 500px;
+  position: relative;
+
+  @media (min-width: $bp-tablet) {
+    background-image: none;
+    position: relative;
+    min-height: 850px;
+  }
+
+  @media (min-width: $bp-desktop) {
+    display: flex;
+    min-height: 650px;
+
+    &::before {
+      content: "";
+      background-image: url("../img/index-background-desktop@1x.jpg");
+      position: absolute;
+      top: -112px;
+      right: 0;
+      width: 720px;
+      height: 696px;
+      z-index: -1;
+    }
+  }
 
   .intro__title {
     font-family: "Oswald", "Arial", sans-serif;
@@ -12,10 +35,19 @@
     line-height: 1;
     margin: 0;
     padding-top: 30px;
-    padding-left: 35px;
-    padding-right: 35px;
     padding-bottom: 20px;
     font-weight: normal;
+
+    @media (min-width: $bp-tablet) {
+      padding-left: 90px;
+      font-size: 60px;
+      color: #111111;
+      text-align: left;
+    }
+
+    @media (min-width: $bp-desktop) {
+      width: 505px;
+    }
   }
 
   .intro__slogan {
@@ -23,15 +55,69 @@
     font-size: 14px;
     line-height: 1;
     margin: 0;
+
+    @media (min-width: $bp-tablet) {
+      font-size: 20px;
+      color: #111111;
+      text-align: left;
+      padding-left: 100px;
+    }
   }
 
   .intro__image {
     margin-top: 30px;
+    position: absolute;
+    top: 140px;
+    left: 15px;
+
+    @media (min-width: $bp-tablet) {
+      top: 200px;
+      left: 65px;
+      min-height: 609px;
+      width: 709px;
+      margin: 0;
+    }
+
+    @media (min-width: $bp-desktop) {
+      width: 550px;
+      height: 500px;
+      top: 0;
+      left: 585px;
+    }
   }
 
   .intro__link {
     font-size: 14px;
     line-height: 1.29;
-    margin-top: 3px;
+    margin-top: auto;
+
+    @media (min-width: $bp-tablet) {
+      margin: 0;
+      font-size: 20px;
+      line-height: 1;
+      margin-left: 100px;
+      margin-top: 48px;
+      z-index: 1;
+    }
+
+    @media (min-width: $bp-desktop) {
+      margin-top: 53px;
+    }
+  }
+
+  .intro__wrapper {
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: $bp-tablet) {
+      display: flex;
+      flex-direction: column;
+    }
+
+    @media (min-width: $bp-desktop) {
+      display: flex;
+      flex-direction: column;
+    }
   }
 }

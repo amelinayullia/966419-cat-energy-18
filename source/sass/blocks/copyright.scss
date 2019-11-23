@@ -2,6 +2,10 @@
   text-decoration: none;
   color: #444444;
   line-height: 1;
+
+  @media (min-width: $bp-tablet) {
+    padding-right: 23px;
+  }
 }
 
 .copyright__image {
