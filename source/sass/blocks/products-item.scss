@@ -6,6 +6,10 @@
   color: #222222;
   margin: 0;
   padding-top: 15px;
+
+  @media (min-width: $bp-tablet) {
+    padding: 0;
+  }
 }
 
 .products-item__description {
@@ -17,8 +21,25 @@
   padding-bottom: 15px;
   display: flex;
   justify-content: space-between;
+
+  @media (min-width: $bp-tablet) {
+    padding: 0;
+    min-width: 200px;
+    margin-left: auto;
+  }
 }
 
 .products-item__link {
   margin-bottom: 17px;
+
+  @media (min-width: $bp-tablet) {
+    margin: 0;
+  }
+}
+
+.products-item__wrapper {
+  @media (min-width: $bp-tablet) {
+    display: flex;
+    padding-bottom: 25px;
+  }
 }

@@ -7,6 +7,12 @@
   padding-top: 30px;
   padding-bottom: 30px;
   border-bottom: 1px solid #ededed;
+
+  @media (min-width: $bp-tablet) {
+    padding-top: 70px;
+    padding-bottom: 75px;
+    border: none;
+  }
 }
 
 .additional-products__list {
@@ -17,4 +23,10 @@
 
 .additional-products__item {
   border-bottom: 1px solid #ededed;
+
+  @media (min-width: $bp-tablet) {
+    padding: 28px 38px;
+    border-bottom: none;
+    border: 1px solid #ededed;
+  }
 }

@@ -49,6 +49,10 @@
     padding: 38px;
     margin-bottom: 140px;
     position: relative;
+
+    &:nth-last-child(2) {
+      margin: 0;
+    }
   }
 
   @media (min-width: $bp-desktop) {
