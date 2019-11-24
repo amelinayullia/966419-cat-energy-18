@@ -27,6 +27,11 @@
     min-width: 200px;
     margin-left: auto;
   }
+
+  @media (min-width: $bp-desktop) {
+    min-width: 285px;
+    padding-right: 40px;
+  }
 }
 
 .products-item__link {
@@ -35,11 +40,22 @@
   @media (min-width: $bp-tablet) {
     margin: 0;
   }
+
+  @media (min-width: $bp-desktop) {
+    max-width: 245px;
+    margin-left: auto;
+  }
 }
 
 .products-item__wrapper {
   @media (min-width: $bp-tablet) {
     display: flex;
     padding-bottom: 25px;
+  }
+
+  @media (min-width: $bp-desktop) {
+    padding: 0;
+    align-items: center;
+    flex-grow: 1;
   }
 }

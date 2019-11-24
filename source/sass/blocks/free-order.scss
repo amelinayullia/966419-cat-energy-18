@@ -20,6 +20,15 @@
     margin-bottom: 75px;
   }
 
+  @media (min-width: $bp-desktop) {
+    min-width: 245px;
+    min-height: 290px;
+    background-size: 245px 290px;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+  }
+
   &::before {
     content: "";
     background-image: url("../img/icon-gift.svg");
@@ -44,6 +53,11 @@
       padding: 0;
       max-width: 160px;
       text-align: left;
+    }
+
+    @media (min-width: $bp-desktop) {
+      text-align: center;
+      margin-top: 190px;
     }
   }
 }
