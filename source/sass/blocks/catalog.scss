@@ -12,12 +12,12 @@
     border: none;
     font-size: 60px;
     line-height: 1;
-    padding: 65px 0;
+    padding: 0;
+    padding-top: 65px;
   }
 
   @media (min-width: $bp-desktop) {
     padding-top: 83px;
-    padding-bottom: 155px;
   }
 }
 
@@ -47,7 +47,7 @@
     align-items: center;
     background-color: #f2f2f2;
     padding: 38px;
-    margin-bottom: 140px;
+    margin-top: 140px;
     position: relative;
   }
 
