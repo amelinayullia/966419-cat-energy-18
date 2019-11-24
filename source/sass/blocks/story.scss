@@ -109,7 +109,7 @@
     }
   }
 
-  .story__wrapper {
+  .story__inner {
     @media (min-width: $bp-desktop) {
       display: flex;
       flex-direction: column;

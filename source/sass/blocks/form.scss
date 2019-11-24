@@ -152,7 +152,7 @@
     }
   }
 
-  .form-wrapper__checkbox {
+  .form__checkbox-wrapper {
     @media (min-width: $bp-tablet) {
       display: flex;
       flex-wrap: wrap;
@@ -160,7 +160,7 @@
     }
   }
 
-  .form-wrapper__button-attention {
+  .form-inner__button-attention {
     @media (min-width: $bp-tablet) {
       display: flex;
       align-items: center;
@@ -168,14 +168,14 @@
     }
   }
 
-  .form-wrapper__contacts {
+  .form__contacts-wrapper {
     @media (min-width: $bp-desktop) {
       display: flex;
       justify-content: space-between;
     }
   }
 
-  .form-wrapper__introduction-program {
+  .form-inner__introduction-program {
     @media (min-width: $bp-desktop) {
       display: flex;
       justify-content: space-between;
