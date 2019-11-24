@@ -1,8 +1,13 @@
-.contacts {
-  margin: 0 auto;
-  max-width: 320px;
+.contacts__map {
+  border: none;
 
-  .contacts__map {
-    border: none;
+  @media (min-width: $bp-tablet) {
+    position: relative;
+    height: 400px;
+    width: 100%;
+  }
+
+  @media (min-width: $bp-desktop) {
+    width: 1440px;
   }
 }

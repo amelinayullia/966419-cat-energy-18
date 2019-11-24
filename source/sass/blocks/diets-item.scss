@@ -1,46 +1,14 @@
-.diets-item__title {
-  font-family: "Oswald", "Arial", sans-serif;
-  font-size: 24px;
-  font-weight: normal;
-  line-height: 1.54;
-  text-transform: uppercase;
-  margin: 0;
-  padding-left: 70px;
-  padding-top: 10px;
-}
-
-.diets-item__description {
-  font-size: 14px;
-  color: #444444;
-  padding-top: 24px;
-  padding-bottom: 24px;
-  margin: 0;
-}
-
-.diets-item__link {
-  font-family: "Oswald", "Arial", sans-serif;
-  line-height: 1;
-  color: #111111;
-  padding-top: 20px;
-  text-decoration: none;
-  text-transform: uppercase;
-  position: relative;
-
-  &::after {
-    content: "";
-    background-image: url("../img/icon-right-arrow-long.svg");
-    background-repeat: no-repeat;
-    width: 25px;
-    height: 12px;
-    position: absolute;
-    left: 95px;
-    top: 25px;
-  }
-}
-
 .diets-item {
   list-style: none;
   position: relative;
+
+  @media (min-width: $bp-tablet) {
+    width: 100%;
+  }
+
+  @media (min-width: $bp-desktop) {
+    max-width: 570px;
+  }
 
   &::after {
     content: "";
@@ -57,6 +25,20 @@
     position: absolute;
     left: 20px;
     border-radius: 50%;
+
+    @media (min-width: $bp-tablet) {
+      width: 200px;
+      height: 200px;
+      left: 448px;
+      top: 80px;
+    }
+
+    @media (min-width: $bp-desktop) {
+      width: 100px;
+      height: 100px;
+      left: 50px;
+      top: 50px;
+    }
   }
 
   &--slim::after {
@@ -66,6 +48,20 @@
     left: 29px;
     top: 21px;
     position: absolute;
+
+    @media (min-width: $bp-tablet) {
+      width: 141px;
+      height: 194px;
+      left: 480px;
+      top: 74px;
+    }
+
+    @media (min-width: $bp-desktop) {
+      width: 71px;
+      height: 97px;
+      left: 65px;
+      top: 47px;
+    }
   }
 
   &--fat::after {
@@ -75,5 +71,95 @@
     left: 12px;
     top: 33px;
     position: absolute;
+
+    @media (min-width: $bp-tablet) {
+      width: 268px;
+      height: 113px;
+      left: 420px;
+      top: 135px;
+    }
+
+    @media (min-width: $bp-desktop) {
+      width: 134px;
+      height: 57px;
+      left: 32px;
+      top: 73px;
+    }
+  }
+}
+
+.diets-item__title {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 1.54;
+  text-transform: uppercase;
+  margin: 0;
+  padding-left: 70px;
+  padding-top: 10px;
+
+  @media (min-width: $bp-tablet) {
+    font-size: 36px;
+    line-height: 1.03;
+    padding: 0;
+    padding-top: 20px;
+  }
+
+  @media (min-width: $bp-desktop) {
+    padding-left: 165px;
+  }
+}
+
+.diets-item__description {
+  font-size: 14px;
+  color: #444444;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  margin: 0;
+
+  @media (min-width: $bp-tablet) {
+    width: 372px;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  @media (min-width: $bp-desktop) {
+    padding: 0;
+    padding-top: 75px;
+    width: 100%;
+  }
+}
+
+.diets-item__link {
+  font-family: "Oswald", "Arial", sans-serif;
+  line-height: 1;
+  color: #111111;
+  padding-top: 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  position: relative;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  display: block;
+
+  @media (min-width: $bp-tablet) {
+    border: none;
+    font-size: 20px;
+    padding-top: 35px;
+  }
+
+  &::after {
+    content: "";
+    background-image: url("../img/icon-right-arrow-long.svg");
+    background-repeat: no-repeat;
+    width: 25px;
+    height: 12px;
+    position: absolute;
+    left: 95px;
+    top: 25px;
+
+    @media (min-width: $bp-tablet) {
+      left: 135px;
+      top: 40px;
+    }
   }
 }

@@ -15,7 +15,7 @@
 
     <header class="page-header container">
       <a class="page-header__logo logo-header" href="#">
-        <img class="logo-header__image" src="../img/logo-mobile.svg" width="190" height="40"
+        <img class="logo-header__image" src="img/logo-mobile.svg" width="190" height="40"
           alt="Логотип сайта - котик на желтом фоне">
       </a>
 
@@ -43,12 +43,14 @@
     <main class="page-main">
       <h1 class="visually-hidden">Кэт энерджи - интернет магазин функционального питания для котов</h1>
 
-      <section class="intro">
-        <h2 class="intro__title">Функциональное питание для котов</h2>
-        <p class="intro__slogan">Занялся собой? Займись котом!</p>
-        <img class="intro__image" src="../img/index-can-mobile@1x.png" width="280" height="270"
+      <section class="intro container">
+        <div class="intro__wrapper">
+          <h2 class="intro__title">Функциональное питание&nbsp;для котов</h2>
+          <p class="intro__slogan">Занялся собой? Займись котом!</p>
+          <a class="intro__link button" href="form.html">Подобрать программу</a>
+        </div>
+        <img class="intro__image" src="img/index-can-mobile@1x.png" width="280" height="270"
           alt="Фото корма - курица 500 грамм">
-        <a class="intro__link button" href="form.html">Подобрать программу</a>
       </section>
 
       <section class="diets container">
@@ -105,53 +107,60 @@
         </ul>
       </section>
 
-      <section class="story">
+      <section class="story container">
         <h2 class="visually-hidden">История похудения кота</h2>
 
-        <b class="story__example">Живой пример</b>
+        <div class="story__wrapper">
+          <b class="story__example">Живой пример</b>
 
-        <p class="story__description">
-          Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без
-          изнуряющих тренировок!
-          При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
-        </p>
+          <p class="story__description">
+            Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без
+            изнуряющих тренировок!
+            При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
+          </p>
 
-        <div class="story__results story-results">
-          <div class="story-results__information story-information">
-            <span class="story-information__how">5 кг</span>
-            <span class="story-information__which">снижение веса</span>
-          </div>
+          <div class="story__results-wrapper">
+            <div class="story__results story-results">
+              <div class="story-results__information story-information">
+                <span class="story-information__how">5 кг</span>
+                <span class="story-information__which">снижение веса</span>
+              </div>
 
-          <div class="story-results__information story-information">
-            <span class="story-information__how">60 дней</span>
-            <span class="story-information__which">затрачено времени</span>
+              <div class="story-results__information story-information">
+                <span class="story-information__how">60 дней</span>
+                <span class="story-information__which">затрачено времени</span>
+              </div>
+            </div>
+
+            <p class="story__example-cost">Затраты на питание: 15 000 руб.</p>
           </div>
         </div>
 
-        <p class="story__example-cost">Затраты на питание: 15 000 руб.</p>
+        <div class="story__image-wrapper">
+          <img class="story__image" src="img/before-mobile@1x.png" width="320" height="230" alt="Фото котика">
 
-        <img class="story__image" src="../img/before-mobile@1x.png" width="320" height="230" alt="Фото котика">
-
-        <div class="story__image-toggle image-toggle">
-          <span class="image-toggle__was">Было</span>
-          <span class="image-toggle__became">Стало</span>
+          <div class="story__image-toggle image-toggle">
+            <span class="image-toggle__was">Было</span>
+            <span class="image-toggle__became">Стало</span>
+          </div>
         </div>
       </section>
 
       <section class="contacts">
         <h2 class="visually-hidden">Контакты</h2>
-        <div class="contacts-wrapper">
-          <p class="contacts-wrapper__invite">Приглашаем к сотрудничеству дилеров!</p>
-          <p class="contacts-wrapper__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+        <div class="contacts-inner container">
+          <p class="contacts-inner__invite">Приглашаем к сотрудничеству дилеров!</p>
+          <p class="contacts-inner__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
         </div>
-        <img class="contacts__map" src="../img/bg-map-mobile@1x.png" width="320" height="400" alt="Карта">
+
+        <img class="contacts__map" src="img/bg-map-mobile@1x.png" width="320" height="400" alt="Карта">
       </section>
 
     </main>
 
-    <footer class="page-footer">
+    <footer class="page-footer container">
       <a class="page-footer__logo logo-footer" href="#">
-        <img class="logo-footer__image" src="../img/logo-footer.svg" width="128" height="24"
+        <img class="logo-footer__image" src="img/logo-footer.svg" width="128" height="24"
           alt="Логотип сайта Кэт энерджи">
       </a>
 
@@ -161,19 +170,19 @@
         <ul class="social__list">
           <li class="social__item">
             <a class="social__link" href="https://vk.com">
-              <img class="social__image" src="../img/icon-vk.svg" width="22" height="12" alt="Мы в Контакте">
+              <img class="social__image" src="img/icon-vk.svg" width="22" height="12" alt="Мы в Контакте">
             </a>
           </li>
 
           <li class="social__item">
             <a class="social__link" href="https://www.instagram.com">
-              <img class="social__image" src="../img/icon-insta.svg" width="17" height="17" alt="Мы в Инстаграме">
+              <img class="social__image" src="img/icon-insta.svg" width="17" height="17" alt="Мы в Инстаграме">
             </a>
           </li>
 
           <li class="social__item">
             <a class="social__link" href="https://facebook.com">
-              <img class="social__image" src="../img/icon-fb.svg" width="10" height="19" alt="Мы в Фейсбуке">
+              <img class="social__image" src="img/icon-fb.svg" width="10" height="19" alt="Мы в Фейсбуке">
             </a>
           </li>
         </ul>

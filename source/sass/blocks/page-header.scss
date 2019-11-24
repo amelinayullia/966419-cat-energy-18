@@ -1,0 +1,11 @@
+.page-header {
+  @media (min-width: $bp-tablet) {
+    display: flex;
+    padding-top: 24px;
+  }
+
+  @media (min-width: $bp-desktop) {
+    padding-top: 53px;
+    margin-right: auto;
+  }
+}

@@ -1,14 +1,28 @@
 .story {
   background-color: #f2f2f2;
-  margin: 0 auto;
-  max-width: 320px;
-  padding: 32px 21px;
+  padding-top: 33px;
+  padding-bottom: 33px;
+
+  @media (min-width: $bp-tablet) {
+    margin-top: 50px;
+  }
+
+  @media (min-width: $bp-desktop) {
+    display: flex;
+    margin: 0;
+    position: relative;
+  }
 
   .story__example {
     font-family: "Oswald", "Arial", sans-serif;
     font-size: 36px;
     font-weight: normal;
     line-height: 1.67;
+
+    @media (min-width: $bp-tablet) {
+      font-size: 60px;
+      line-height: 1;
+    }
   }
 
   .story__description {
@@ -17,6 +31,20 @@
     margin-bottom: 25px;
     font-size: 14px;
     color: #444444;
+
+    @media (min-width: $bp-tablet) {
+      margin-top: 60px;
+      font-size: 16px;
+      line-height: 1.5;
+      margin-bottom: 55px;
+      width: 676px;
+    }
+
+    @media (min-width: $bp-desktop) {
+      margin-top: 140px;
+      width: 431px;
+      margin-bottom: 70px;
+    }
   }
 
   .story__example-cost {
@@ -26,11 +54,73 @@
     text-align: center;
     text-transform: uppercase;
     margin: 0;
-    margin-top: 25px;
+    margin-top: 12px;
     margin-bottom: 44px;
+
+    @media (min-width: $bp-tablet) {
+      margin: 0;
+      margin-left: auto;
+      width: 175px;
+      font-size: 20px;
+      line-height: 1;
+      text-align: right;
+    }
+
+    @media (min-width: $bp-desktop) {
+      text-align: left;
+      width: 100%;
+      margin-top: 50px;
+      margin-bottom: 40px;
+    }
+  }
+
+  .story__results {
+    display: flex;
+    justify-content: space-between;
+
+    @media (min-width: $bp-desktop) {
+      justify-content: stretch;
+    }
+  }
+
+  .story__image-toggle {
+    display: flex;
+    justify-content: center;
+  }
+
+  .story__results-wrapper {
+    @media (min-width: $bp-tablet) {
+      display: flex;
+    }
+
+    @media (min-width: $bp-desktop) {
+      flex-direction: column;
+    }
   }
 
   .story__image {
-    width: 100%;
+    @media (min-width: $bp-tablet) {
+      width: 100%;
+    }
+
+    @media (min-width: $bp-desktop) {
+      width: 500px;
+      height: 517px;
+    }
+  }
+
+  .story__wrapper {
+    @media (min-width: $bp-desktop) {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  .story__image-wrapper {
+    @media (min-width: $bp-desktop) {
+      position: absolute;
+      top: -60px;
+      right: 150px;
+    }
   }
 }

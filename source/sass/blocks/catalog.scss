@@ -3,14 +3,55 @@
   font-size: 36px;
   line-height: 1.67;
   font-weight: normal;
+  border-top: 1px solid #ededed;
+  border-bottom: 1px solid #ededed;
+  margin: 0;
+  padding: 30px 0;
+
+  @media (min-width: $bp-tablet) {
+    border: none;
+    font-size: 60px;
+    line-height: 1;
+    padding: 65px 0;
+  }
+
+  @media (min-width: $bp-desktop) {
+    padding-top: 83px;
+    padding-bottom: 155px;
+  }
 }
 
 .catalog__list {
   list-style: none;
   padding: 0;
+  margin: 0;
+
+  @media (min-width: $bp-tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }
 
 .catalog__item {
-  padding-bottom: 25px;
+  padding: 25px 0;
   border-bottom: 1px solid #ededed;
+
+  @media (min-width: $bp-tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 325px;
+    min-height: 430px;
+    border: none;
+    align-items: center;
+    background-color: #f2f2f2;
+    padding: 38px;
+    margin-bottom: 140px;
+    position: relative;
+  }
+
+  @media (min-width: $bp-desktop) {
+    max-width: 245px;
+  }
 }

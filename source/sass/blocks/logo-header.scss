@@ -1,0 +1,28 @@
+.logo-header {
+  display: flex;
+  margin: 0;
+  padding: 15px 0;
+
+  @media (min-width: $bp-tablet) {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    padding-right: 96px;
+  }
+
+  @media (min-width: $bp-desktop) {
+    padding: 0;
+  }
+
+  .logo-header__image {
+    @media (min-width: $bp-tablet) {
+      width: 174px;
+      height: 69px;
+    }
+
+    @media (min-width: $bp-desktop) {
+      width: 203px;
+      height: 60px;
+    }
+  }
+}
