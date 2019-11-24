@@ -41,5 +41,9 @@
       margin: 0;
       margin-left: 40px;
     }
+
+    @media (min-width: $bp-desktop) {
+      margin-left: 0;
+    }
   }
 }

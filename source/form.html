@@ -47,41 +47,45 @@
         <p class="profile__preface">Заполните анкету и мы подберем программу питания для вашего кота</p>
 
         <form class="form" action="https://echo.htmlacademy.ru">
-          <div class="form__introduction">
-            <label class="form__label">Имя:*
-              <input class="form__input" type="text" name="name" placeholder="Барсик">
-            </label>
+          <div class="form-wrapper__introduction-program">
+            <div class="form__introduction">
+              <label class="form__label">Имя:*
+                <input class="form__input" type="text" name="name" placeholder="Барсик">
+              </label>
 
-            <label class="form__label">Вес (кг):*
-              <input class="form__input" type="text" name="weight" placeholder="7">
-            </label>
+              <label class="form__label">Вес (кг):*
+                <input class="form__input" type="text" name="weight" placeholder="7">
+              </label>
 
-            <label class="form__label">Возраст (лет):
-              <input class="form__input" type="text" name="years" placeholder="7">
-            </label>
-          </div>
+              <label class="form__label">Возраст (лет):
+                <input class="form__input" type="text" name="years" placeholder="7">
+              </label>
+            </div>
 
-          <div class="form__program">
-            <input class="form__radio" type="radio" name="slimming" id="slimming" checked>
-            <label class="form__label form__label--radio" for="slimming">Похудение</label>
+            <div class="form__program">
+              <input class="form__radio" type="radio" name="slimming" id="slimming" checked>
+              <label class="form__label form__label--radio" for="slimming">Похудение</label>
 
-            <input class="form__radio" type="radio" name="weight" id="weight">
-            <label class="form__label form__label--radio" for="weight">Набор массы</label>
+              <input class="form__radio" type="radio" name="weight" id="weight">
+              <label class="form__label form__label--radio" for="weight">Набор массы</label>
 
-            <input class="form__radio" type="radio" name="advice" id="advice">
-            <label class="form__label form__label--radio" for="advice">Не знаю (Нужен ваш совет)</label>
+              <input class="form__radio" type="radio" name="advice" id="advice">
+              <label class="form__label form__label--radio" for="advice">Не знаю (Нужен ваш совет)</label>
+            </div>
           </div>
 
           <fieldset class="form__contacts">
             <legend class="form__legend">Контактные данные (владельца кота)</legend>
 
-            <label class="form__label">E-mail:*
-              <input class="form__input" type="email" name="email" placeholder="kuklachev@gmail.com">
-            </label>
+            <div class="form-wrapper__contacts">
+              <label class="form__label">E-mail:*
+                <input class="form__input" type="email" name="email" placeholder="kuklachev@gmail.com">
+              </label>
 
-            <label class="form__label">Телефон:*
-              <input class="form__input" type="tel" name="tel" placeholder="8 (960) 900-60-90">
-            </label>
+              <label class="form__label">Телефон:*
+                <input class="form__input" type="tel" name="tel" placeholder="8 (960) 900-60-90">
+              </label>
+            </div>
           </fieldset>
 
           <fieldset class="form__comment">
@@ -92,7 +96,8 @@
 
           <fieldset class="form__additionally">
             <legend class="form__legend">Дополнительно</legend>
-            <div class="form__checkbox-wrapper">
+
+            <div class="form-wrapper__checkbox">
               <input class="form__checkbox" type="checkbox" name="sweetener" id="sweetener" checked>
               <label class="form__label form__label--checkbox" for="sweetener">Сахарозаменитель</label>
 
@@ -107,7 +112,7 @@
             </div>
           </fieldset>
 
-          <div class="form__button-attention">
+          <div class="form-wrapper__button-attention">
             <button class="form__button button" type="submit">Отправить заявку</button>
             <span class="form__attention">* — Обязательные поля</span>
           </div>
