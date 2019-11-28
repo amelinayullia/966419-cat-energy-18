@@ -23,7 +23,8 @@
     height: 50px;
     background-color: #68b738;
     position: absolute;
-    left: 20px;
+    left: 22px;
+    top: 27px;
     border-radius: 50%;
 
     @media (min-width: $bp-tablet) {
@@ -45,8 +46,8 @@
     background-image: url("../img/icon-cat-slim.svg");
     width: 35px;
     height: 49px;
-    left: 29px;
-    top: 21px;
+    left: 30px;
+    top: 25px;
     position: absolute;
 
     @media (min-width: $bp-tablet) {
@@ -68,8 +69,8 @@
     background-image: url("../img/icon-cat-pro.svg");
     width: 67px;
     height: 28px;
-    left: 12px;
-    top: 33px;
+    left: 14px;
+    top: 35px;
     position: absolute;
 
     @media (min-width: $bp-tablet) {
@@ -113,8 +114,8 @@
 .diets-item__description {
   font-size: 14px;
   color: #444444;
-  padding-top: 24px;
-  padding-bottom: 24px;
+  padding-top: 31px;
+  padding-bottom: 21px;
   margin: 0;
 
   @media (min-width: $bp-tablet) {

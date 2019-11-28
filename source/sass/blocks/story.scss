@@ -1,6 +1,6 @@
 .story {
   background-color: #f2f2f2;
-  padding-top: 33px;
+  padding-top: 20px;
   padding-bottom: 33px;
 
   @media (min-width: $bp-tablet) {
@@ -27,10 +27,11 @@
 
   .story__description {
     margin: 0;
-    margin-top: 30px;
+    margin-top: 23px;
     margin-bottom: 25px;
     font-size: 14px;
     color: #444444;
+    padding-right: 10px;
 
     @media (min-width: $bp-tablet) {
       margin-top: 60px;
@@ -54,8 +55,8 @@
     text-align: center;
     text-transform: uppercase;
     margin: 0;
-    margin-top: 12px;
-    margin-bottom: 44px;
+    margin-top: 20px;
+    margin-bottom: 40px;
 
     @media (min-width: $bp-tablet) {
       margin: 0;
@@ -99,6 +100,8 @@
   }
 
   .story__image {
+    height: 230px;
+
     @media (min-width: $bp-tablet) {
       width: 100%;
     }
