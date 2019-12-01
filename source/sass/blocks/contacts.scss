@@ -1,14 +1,30 @@
-.contacts__map {
-  border: none;
-  height: 375px;
+.contacts {
+  position: relative;
 
-  @media (min-width: $bp-tablet) {
-    position: relative;
-    height: 400px;
-    width: 100%;
+  &::after {
+    content: "";
+    background-image: url("../img/map-pin.png");
+    background-repeat: no-repeat;
+    width: 55px;
+    height: 53px;
+    top: 254px;
+    left: 129px;
+    position: absolute;
+    background-size: cover;
   }
 
-  @media (min-width: $bp-desktop) {
-    width: 1440px;
+  .contacts__map {
+    border: none;
+    height: 375px;
+
+    @media (min-width: $bp-tablet) {
+      position: relative;
+      height: 400px;
+      width: 100%;
+    }
+
+    @media (min-width: $bp-desktop) {
+      width: 1440px;
+    }
   }
 }

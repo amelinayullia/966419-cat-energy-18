@@ -13,8 +13,8 @@
 
   <body>
 
-    <header class="page-header container">
-      <a class="page-header__logo logo-header" href="#">
+    <header class="page-header">
+      <a class="page-header__logo logo-header container" href="#">
         <img class="logo-header__image" src="img/logo-mobile.svg" width="190" height="40"
           alt="Логотип сайта - котик на желтом фоне">
       </a>
@@ -24,7 +24,7 @@
           <span class="visually-hidden">Открыть меню</span>
         </button>
 
-        <div class="main-nav__wrapper-list">
+        <div class="main-nav__list-wrapper">
           <ul class="main-nav__list nav-list">
             <li class="nav-list__item">
               <a class="nav-list__link nav-list__link--menu" href="index.html">Главная</a>
@@ -63,13 +63,13 @@
             </div>
 
             <div class="form__program form__program--radio">
-              <input class="form__radio visually-hidden" type="radio" name="slimming" id="slimming" checked>
-              <label class="form__label form__label--radio" for="slimming">Похудение</label>
+              <input class="form__radio visually-hidden" type="radio" name="programm" value="slim" id="slim" checked>
+              <label class="form__label form__label--radio" for="slim">Похудение</label>
 
-              <input class="form__radio visually-hidden" type="radio" name="weight" id="weight">
-              <label class="form__label form__label--radio" for="weight">Набор массы</label>
+              <input class="form__radio visually-hidden" type="radio" name="programm" value="gain" id="gain">
+              <label class="form__label form__label--radio" for="gain">Набор массы</label>
 
-              <input class="form__radio visually-hidden" type="radio" name="advice" id="advice">
+              <input class="form__radio visually-hidden" type="radio" name="programm" value="advice" id="advice">
               <label class="form__label form__label--radio" for="advice">Не знаю (Нужен ваш совет)</label>
             </div>
           </div>
