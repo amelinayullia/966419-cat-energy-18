@@ -1,6 +1,6 @@
 .profile {
-  padding-top: 30px;
-  padding-bottom: 35px;
+  padding-top: 15px;
+  padding-bottom: 32px;
 
   @media (min-width: $bp-tablet) {
     padding-top: 60px;
@@ -13,8 +13,7 @@
     font-weight: normal;
     line-height: 1.67;
     margin: 0;
-    padding-bottom: 30px;
-    border-top: 1px solid #ededed;
+    padding-bottom: 25px;
 
     @media (min-width: $bp-tablet) {
       border: none;

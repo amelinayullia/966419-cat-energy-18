@@ -34,7 +34,7 @@
   }
 
   .nav-list__item {
-    border-top: 1px solid #ededed;
+    border-bottom: 1px solid #ededed;
 
     @media (min-width: $bp-tablet) {
       border: none;

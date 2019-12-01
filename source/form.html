@@ -19,20 +19,20 @@
           alt="Логотип сайта - котик на желтом фоне">
       </a>
 
-      <nav class="main-nav">
+      <nav class="main-nav main-nav--closed main-nav--nojs">
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
 
-        <div class="main-nav">
+        <div class="main-nav__wrapper-list">
           <ul class="main-nav__list nav-list">
-            <li class="nav-list__item nav-list__item--active">
+            <li class="nav-list__item">
               <a class="nav-list__link nav-list__link--menu" href="index.html">Главная</a>
             </li>
             <li class="nav-list__item">
               <a class="nav-list__link nav-list__link--menu" href="catalog.html">Каталог продукции</a>
             </li>
-            <li class="nav-list__item">
+            <li class="nav-list__item nav-list__item--active">
               <a class="nav-list__link nav-list__link--menu" href="#">Подбор программы</a>
             </li>
           </ul>
@@ -62,24 +62,24 @@
               </label>
             </div>
 
-            <div class="form__program">
-              <input class="form__radio" type="radio" name="slimming" id="slimming" checked>
+            <div class="form__program form__program--radio">
+              <input class="form__radio visually-hidden" type="radio" name="slimming" id="slimming" checked>
               <label class="form__label form__label--radio" for="slimming">Похудение</label>
 
-              <input class="form__radio" type="radio" name="weight" id="weight">
+              <input class="form__radio visually-hidden" type="radio" name="weight" id="weight">
               <label class="form__label form__label--radio" for="weight">Набор массы</label>
 
-              <input class="form__radio" type="radio" name="advice" id="advice">
+              <input class="form__radio visually-hidden" type="radio" name="advice" id="advice">
               <label class="form__label form__label--radio" for="advice">Не знаю (Нужен ваш совет)</label>
             </div>
           </div>
 
           <fieldset class="form__contacts">
-            <legend class="form__legend">Контактные данные (владельца кота)</legend>
+            <legend class="form__legend form__legend--contacts">Контактные данные (владельца кота)</legend>
 
             <div class="form__contacts-wrapper">
               <label class="form__label">E-mail:*
-                <input class="form__input" type="email" name="email" placeholder="kuklachev@gmail.com">
+                <input class="form__input form__input--email" type="email" name="email" placeholder="kuklachev@gmail.com">
               </label>
 
               <label class="form__label">Телефон:*
@@ -89,25 +89,25 @@
           </fieldset>
 
           <fieldset class="form__comment">
-            <legend class="form__legend">Комментарий</legend>
+            <legend class="form__legend form__legend--textarea">Комментарий</legend>
 
             <textarea class="form__textarea" name="text" placeholder="Расскажите обо всех повадках кота"></textarea>
           </fieldset>
 
           <fieldset class="form__additionally">
-            <legend class="form__legend">Дополнительно</legend>
+            <legend class="form__legend form__legend--checkbox">Дополнительно</legend>
 
             <div class="form__checkbox-wrapper">
-              <input class="form__checkbox" type="checkbox" name="sweetener" id="sweetener" checked>
+              <input class="form__checkbox visually-hidden" type="checkbox" name="sweetener" id="sweetener" checked>
               <label class="form__label form__label--checkbox" for="sweetener">Сахарозаменитель</label>
 
-              <input class="form__checkbox" type="checkbox" name="water" id="water">
+              <input class="form__checkbox visually-hidden" type="checkbox" name="water" id="water">
               <label class="form__label form__label--checkbox" for="water">Питьевая вода</label>
 
-              <input class="form__checkbox" type="checkbox" name="milk" id="milk">
+              <input class="form__checkbox visually-hidden" type="checkbox" name="milk" id="milk">
               <label class="form__label form__label--checkbox" for="milk">Молоко</label>
 
-              <input class="form__checkbox" type="checkbox" name="vitamins" id="vitamins">
+              <input class="form__checkbox visually-hidden" type="checkbox" name="vitamins" id="vitamins">
               <label class="form__label form__label--checkbox" for="vitamins">Витамины</label>
             </div>
           </fieldset>
@@ -122,7 +122,7 @@
       <section class="contacts">
         <h2 class="visually-hidden">Контакты</h2>
         <div class="contacts-inner contacts-inner--form container">
-          <p class="contacts-inner__invite">Приглашаем к сотрудничеству дилеров!</p>
+          <p class="contacts-inner__invite">Приглашаем к&nbsp;сотрудничеству дилеров!</p>
           <p class="contacts-inner__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
         </div>
 
@@ -175,6 +175,23 @@
         </a>
       </div>
     </footer>
+
+    <script>
+      var navMain = document.querySelector(".main-nav");
+      var navToggle = document.querySelector(".main-nav__toggle");
+
+      navMain.classList.remove("main-nav--nojs");
+
+      navToggle.addEventListener('click', function () {
+        if (navMain.classList.contains("main-nav--closed")) {
+          navMain.classList.remove("main-nav--closed");
+          navMain.classList.add("main-nav--opened");
+        } else {
+          navMain.classList.add("main-nav--closed");
+          navMain.classList.remove("main-nav--opened");
+        }
+      });
+    </script>
 
   </body>
 
