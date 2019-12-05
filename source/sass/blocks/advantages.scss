@@ -2,7 +2,8 @@
   margin-bottom: 22px;
 
   @media (min-width: $bp-tablet) {
-    margin-top: 30px;
+    margin-top: 45px;
+    border-bottom: 1px solid #ededed;
   }
 
   .advantages__title {
@@ -16,7 +17,7 @@
     @media (min-width: $bp-tablet) {
       font-size: 60px;
       line-height: 1;
-      margin-bottom: 60px;
+      margin-bottom: 40px;
     }
   }
 
@@ -27,8 +28,7 @@
     @media (min-width: $bp-tablet) {
       display: flex;
       flex-wrap: wrap;
-      padding-bottom: 85px;
-      border-bottom: 1px solid #ededed;
+      justify-content: space-between;
     }
 
     @media (min-width: $bp-desktop) {
@@ -46,9 +46,9 @@
     padding-bottom: 17px;
 
     @media (min-width: $bp-tablet) {
-      padding-left: 0;
-      padding-top: 117px;
-      margin-right: 104px;
+      padding: 0;
+      min-width: 325px;
+      min-height: 317px;
     }
 
     @media (min-width: $bp-desktop) {

@@ -9,7 +9,10 @@
     display: flex;
     margin: 0;
     padding: 0;
-    padding-right: 96px;
+    border: none;
+    min-width: 174px;
+    height: 60px;
+    margin-right: 94px;
   }
 
   @media (min-width: $bp-desktop) {
