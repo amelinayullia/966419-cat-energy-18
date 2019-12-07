@@ -12,12 +12,17 @@
 
   &::before {
     content: "";
-    width: 162px;
-    height: 72px;
+    width: 125px;
+    height: 56px;
     border: 1px solid #cdcdcd;
     border-radius: 3px;
     position: absolute;
     top: 0;
+
+    @media (min-width: $bp-tablet) {
+      width: 162px;
+      height: 72px;
+    }
   }
 
   .story-information__how {
@@ -25,7 +30,7 @@
     font-size: 24px;
     line-height: 1;
     padding-top: 15px;
-    padding-bottom: 7px;
+    padding-bottom: 8px;
     text-transform: uppercase;
 
     @media (min-width: $bp-tablet) {

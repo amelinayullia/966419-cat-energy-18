@@ -1,11 +1,13 @@
 .contacts-inner {
   display: flex;
   align-items: center;
-  padding-top: 30px;
+  padding-top: 29px;
   padding-bottom: 25px;
 
   @media (min-width: $bp-tablet) {
-    padding: 65px 72px;
+    padding: 0 72px;
+    padding-top: 64px;
+    padding-bottom: 60px;
     justify-content: space-between;
     align-items: stretch;
   }
@@ -39,28 +41,23 @@
   }
 
   .contacts-inner__address {
-    @media (min-width: $bp-tablet) {
-      display: flex;
-      flex-direction: column;
-      max-width: 155px;
-    }
-  }
-
-  .contacts-inner__streets {
+    font-size: 14px;
     line-height: 1.43;
     color: #444444;
     margin: 0;
-    font-size: 14px;
 
     @media (min-width: $bp-tablet) {
       font-size: 16px;
       line-height: 1.25;
       text-align: right;
+      max-width: 165px;
     }
   }
 
   .contacts-inner__city {
-    text-align: right;
-    margin-top: 18px;
+    @media (min-width: $bp-tablet) {
+      margin-top: 20px;
+      display: block;
+    }
   }
 }
