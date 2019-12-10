@@ -118,24 +118,25 @@
             изнуряющих тренировок!
             При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
           </p>
+        </div>
 
-          <div class="story__results-wrapper container">
-            <div class="story__results story-results">
-              <div class="story-results__information story-information">
-                <span class="story-information__how">5 кг</span>
-                <span class="story-information__which">снижение веса</span>
-              </div>
-
-              <div class="story-results__information story-information">
-                <span class="story-information__how">60 дней</span>
-                <span class="story-information__which">затрачено времени</span>
-              </div>
+        <div class="story__results-wrapper container">
+          <div class="story__results story-results">
+            <div class="story-results__information story-information">
+              <span class="story-information__how">5 кг</span>
+              <span class="story-information__which">снижение веса</span>
             </div>
 
-            <p class="story-results__expenses">
-              Затраты на питание:
-              <span class="story-results__cost">15 000 руб.</span>
-            </p>
+            <div class="story-results__information story-information">
+              <span class="story-information__how">60 дней</span>
+              <span class="story-information__which">затрачено времени</span>
+            </div>
+          </div>
+
+          <p class="story-results__expenses">
+            Затраты на питание:
+            <span class="story-results__cost">15 000 руб.</span>
+          </p>
         </div>
 
         <div class="story__image-wrapper">
@@ -205,22 +206,7 @@
       </div>
     </footer>
 
-    <script>
-      var navMain = document.querySelector(".main-nav");
-      var navToggle = document.querySelector(".main-nav__toggle");
-
-      navMain.classList.remove("main-nav--nojs");
-
-      navToggle.addEventListener('click', function () {
-        if (navMain.classList.contains("main-nav--closed")) {
-          navMain.classList.remove("main-nav--closed");
-          navMain.classList.add("main-nav--opened");
-        } else {
-          navMain.classList.add("main-nav--closed");
-          navMain.classList.remove("main-nav--opened");
-        }
-      });
-    </script>
+    <script src="js/scripts.js"></script>
 
   </body>
 

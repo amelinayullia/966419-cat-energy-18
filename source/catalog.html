@@ -381,19 +381,19 @@
         <ul class="social__list">
           <li class="social__item">
             <a class="social__link" href="https://vk.com">
-              <img class="social__image" src="img/icon-vk.svg" width="22" height="12" alt="Мы в Контакте">
+              <img class="social__image-vk" src="img/icon-vk.svg" width="22" height="12" alt="Мы в Контакте">
             </a>
           </li>
 
           <li class="social__item">
             <a class="social__link" href="https://www.instagram.com">
-              <img class="social__image" src="img/icon-insta.svg" width="17" height="17" alt="Мы в Инстаграме">
+              <img class="social__image-insta" src="img/icon-insta.svg" width="17" height="17" alt="Мы в Инстаграме">
             </a>
           </li>
 
           <li class="social__item">
             <a class="social__link" href="https://facebook.com">
-              <img class="social__image" src="img/icon-fb.svg" width="10" height="19" alt="Мы в Фейсбуке">
+              <img class="social__image-fb" src="img/icon-fb.svg" width="10" height="19" alt="Мы в Фейсбуке">
             </a>
           </li>
         </ul>
@@ -410,22 +410,7 @@
       </div>
     </footer>
 
-    <script>
-      var navMain = document.querySelector(".main-nav");
-      var navToggle = document.querySelector(".main-nav__toggle");
-
-      navMain.classList.remove("main-nav--nojs");
-
-      navToggle.addEventListener('click', function () {
-        if (navMain.classList.contains("main-nav--closed")) {
-          navMain.classList.remove("main-nav--closed");
-          navMain.classList.add("main-nav--opened");
-        } else {
-          navMain.classList.add("main-nav--closed");
-          navMain.classList.remove("main-nav--opened");
-        }
-      });
-    </script>
+    <script src="js/scripts.js"></script>
 
   </body>
 

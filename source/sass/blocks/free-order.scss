@@ -16,8 +16,10 @@
     height: 200px;
     background-size: 708px 200px;
     align-items: flex-end;
-    padding: 70px 125px;
-    margin-bottom: 75px;
+    padding: 72px 123px;
+    margin: 0;
+    margin-top: 70px;
+    margin-bottom: 76px;
   }
 
   @media (min-width: $bp-desktop) {
@@ -38,6 +40,11 @@
     position: absolute;
     top: 64px;
     left: 112px;
+
+    @media (min-width: $bp-tablet) {
+      top: 65px;
+      left: 90px;
+    }
   }
 
   .free-order__description {
@@ -50,7 +57,7 @@
     @media (min-width: $bp-tablet) {
       margin: 0;
       padding: 0;
-      max-width: 160px;
+      max-width: 162px;
       text-align: left;
     }
 

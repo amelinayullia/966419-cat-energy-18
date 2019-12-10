@@ -12,7 +12,7 @@
     height: 430px;
     align-items: center;
     border: 1px solid #ededed;
-    padding: 38px;
+    padding: 36px;
   }
 
   @media (min-width: $bp-desktop) {
@@ -37,6 +37,7 @@
     @media (min-width: $bp-tablet) {
       width: 61px;
       height: 61px;
+      top: 55px;
     }
   }
 
@@ -51,7 +52,7 @@
       line-height: 1;
       max-width: 134px;
       text-align: center;
-      margin-top: 130px;
+      margin-top: 128px;
     }
   }
 
@@ -78,7 +79,7 @@
     font-size: 16px;
 
     @media (min-width: $bp-tablet) {
-      margin-top: 55px;
+      margin-top: 61px;
     }
   }
 }

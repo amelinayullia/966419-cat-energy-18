@@ -11,11 +11,9 @@
   @media (min-width: $bp-tablet) {
     font-size: 20px;
     line-height: 1;
-    max-width: 156px;
     text-align: center;
-    padding: 0;
+    padding: 0 60px;
     margin-top: 125px;
-    margin-bottom: 30px;
   }
 }
 
@@ -23,6 +21,10 @@
   list-style: none;
   padding: 0;
   margin-top: 13px;
+
+  @media (min-width: $bp-tablet) {
+    margin-top: 22px;
+  }
 }
 
 .feed__info-category,
@@ -45,6 +47,7 @@
 
   @media (min-width: $bp-tablet) {
     width: 250px;
+    padding-bottom: 2px;
   }
 
   @media (min-width: $bp-desktop) {
@@ -57,7 +60,8 @@
     min-width: 160px;
     height: 170px;
     position: absolute;
-    top: -40px;
+    top: -45px;
+    left: 80px;
   }
 }
 
@@ -70,6 +74,7 @@
 .feed__info-item {
   @media (min-width: $bp-tablet) {
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    margin-bottom: 3px;
   }
 }
 

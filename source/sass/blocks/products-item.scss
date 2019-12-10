@@ -10,6 +10,7 @@
 
   @media (min-width: $bp-tablet) {
     padding: 0;
+    font-size: 20px;
   }
 }
 
@@ -25,8 +26,9 @@
 
   @media (min-width: $bp-tablet) {
     padding: 0;
-    min-width: 200px;
     margin-left: auto;
+    font-size: 16px;
+    line-height: 1.25;
   }
 
   @media (min-width: $bp-desktop) {
@@ -58,5 +60,18 @@
     padding: 0;
     align-items: center;
     flex-grow: 1;
+  }
+
+  .products-item__category {
+    @media (min-width: $bp-tablet) {
+      margin-right: 50px;
+    }
+  }
+
+  .products-item__value {
+    @media (min-width: $bp-tablet) {
+      min-width: 42px;
+      text-align: right;
+    }
   }
 }
