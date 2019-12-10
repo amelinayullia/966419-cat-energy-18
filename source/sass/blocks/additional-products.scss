@@ -9,7 +9,7 @@
     font-weight: normal;
     line-height: 1;
     margin: 0;
-    padding-top: 4px;
+    padding-top: 29px;
     padding-bottom: 32px;
     border-bottom: 1px solid #ededed;
     position: relative;
@@ -21,7 +21,7 @@
       background-color: #68b738;
       position: absolute;
       right: -20px;
-      top: 16px;
+      top: 42px;
     }
 
     @media (min-width: $bp-tablet) {
@@ -29,6 +29,16 @@
       font-size: 36px;
       padding: 0;
       padding-left: 37px;
+
+      &::before {
+        content: "";
+        width: 28px;
+        height: 3px;
+        background-color: #68b738;
+        position: absolute;
+        top: 22px;
+        left: -30px;
+      }
 
       &::after {
         width: 327px;
@@ -38,7 +48,6 @@
       }
     }
   }
-
 
   .additional-products__list {
     list-style: none;
@@ -58,6 +67,7 @@
       padding: 26px 38px;
       border-bottom: none;
       border: 1px solid #ededed;
+      margin-bottom: -1px;
     }
 
     @media (min-width: $bp-desktop) {
