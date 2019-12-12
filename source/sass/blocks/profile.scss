@@ -1,10 +1,10 @@
 .profile {
-  padding-top: 30px;
-  padding-bottom: 35px;
+  padding-top: 15px;
+  padding-bottom: 32px;
 
   @media (min-width: $bp-tablet) {
-    padding-top: 60px;
-    padding-bottom: 70px;
+    padding-top: 28px;
+    padding-bottom: 74px;
   }
 
   .profile__title {
@@ -13,12 +13,11 @@
     font-weight: normal;
     line-height: 1.67;
     margin: 0;
-    padding-bottom: 30px;
-    border-top: 1px solid #ededed;
+    padding-bottom: 25px;
 
     @media (min-width: $bp-tablet) {
       border: none;
-      padding-bottom: 50px;
+      padding-bottom: 55px;
       font-size: 60px;
       line-height: 1;
     }
@@ -30,7 +29,7 @@
     font-size: 14px;
     line-height: 1.29;
     text-transform: uppercase;
-    padding-right: 10px;
+    padding-right: 30px;
     margin-bottom: 20px;
 
     @media (min-width: $bp-tablet) {
@@ -40,6 +39,7 @@
       line-height: 1.5;
       margin: 0;
       margin-left: 40px;
+      margin-bottom: 68px;
     }
 
     @media (min-width: $bp-desktop) {

@@ -7,8 +7,34 @@
   align-items: center;
   min-width: 240px;
   flex-wrap: wrap;
+  padding-right: 43px;
+  padding-left: 34px;
 
   @media (min-width: $bp-tablet) {
-    min-width: 130px;
+    min-width: 190px;
+    padding: 0;
+    padding-left: 29px;
+    padding-right: 10px;
+  }
+}
+
+.social__image-vk {
+  @media (min-width: $bp-tablet) {
+    width: 30px;
+    height: 16px;
+  }
+}
+
+.social__image-insta {
+  @media (min-width: $bp-tablet) {
+    width: 23px;
+    height: 23px;
+  }
+}
+
+.social__image-fb {
+  @media (min-width: $bp-tablet) {
+    width: 14px;
+    height: 28px;
   }
 }

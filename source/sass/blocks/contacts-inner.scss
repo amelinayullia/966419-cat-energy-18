@@ -1,11 +1,13 @@
 .contacts-inner {
   display: flex;
   align-items: center;
-  padding-top: 30px;
+  padding-top: 29px;
   padding-bottom: 25px;
 
   @media (min-width: $bp-tablet) {
-    padding: 70px;
+    padding: 0 72px;
+    padding-top: 64px;
+    padding-bottom: 60px;
     justify-content: space-between;
     align-items: stretch;
   }
@@ -29,22 +31,33 @@
     line-height: 1.25;
     text-transform: uppercase;
     margin: 0;
-    padding-right: 20px;
+    padding-right: 18px;
 
     @media (min-width: $bp-tablet) {
       max-width: 154px;
       font-size: 20px;
+      padding: 0;
     }
   }
 
   .contacts-inner__address {
+    font-size: 14px;
     line-height: 1.43;
     color: #444444;
     margin: 0;
-    font-size: 14px;
 
     @media (min-width: $bp-tablet) {
-      max-width: 154px;
+      font-size: 16px;
+      line-height: 1.25;
+      text-align: right;
+      max-width: 165px;
+    }
+  }
+
+  .contacts-inner__city {
+    @media (min-width: $bp-tablet) {
+      margin-top: 20px;
+      display: block;
     }
   }
 }

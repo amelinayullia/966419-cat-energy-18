@@ -2,15 +2,15 @@
   text-decoration: none;
   color: #444444;
   line-height: 1;
+  padding-top: 9px;
 
   @media (min-width: $bp-tablet) {
     padding-right: 23px;
+    padding-top: 0;
   }
 }
 
 .copyright__image {
   fill: #666666;
-  width: 27px;
-  height: 34px;
   display: block;
 }

@@ -1,5 +1,5 @@
 .page-footer {
-  padding-top: 39px;
+  padding-top: 27px;
   padding-bottom: 22px;
   background-color: hsl(0, 0%, 95%);
   display: flex;
@@ -7,14 +7,15 @@
 
   @media (min-width: $bp-tablet) {
     flex-direction: row;
-    padding-top: 63px;
+    padding-top: 48px;
     padding-bottom: 63px;
   }
 
   .page-footer__social {
     display: flex;
-    padding: 20px;
-    margin: 30px 0;
+    padding: 21px;
+    margin-top: 32px;
+    margin-bottom: 21px;
     border-top: 1px solid rgba(0, 0, 0, 0.1);
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 
@@ -30,6 +31,7 @@
   .page-footer__copyright {
     display: flex;
     justify-content: space-between;
+    min-height: 34px;
 
     @media (min-width: $bp-tablet) {
       justify-content: stretch;

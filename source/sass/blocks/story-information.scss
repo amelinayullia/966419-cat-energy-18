@@ -3,11 +3,41 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  min-width: 123px;
+  position: relative;
+
+  @media (min-width: $bp-tablet) {
+    min-width: 162px;
+  }
+
+  &::before {
+    content: "";
+    width: 125px;
+    height: 56px;
+    border: 1px solid #cdcdcd;
+    border-radius: 3px;
+    position: absolute;
+    top: 0;
+
+    @media (min-width: $bp-tablet) {
+      width: 162px;
+      height: 72px;
+    }
+  }
 
   .story-information__how {
     font-family: "Oswald", "Arial", sans-serif;
     font-size: 24px;
     line-height: 1;
+    padding-top: 15px;
+    padding-bottom: 8px;
+    text-transform: uppercase;
+
+    @media (min-width: $bp-tablet) {
+      font-size: 30px;
+      line-height: 1.23;
+      padding-bottom: 11px;
+    }
 
     @media (min-width: $bp-desktop) {
       font-size: 30px;
@@ -19,11 +49,18 @@
     font-size: 12px;
     line-height: 1;
     color: #444444;
-    padding: 12px;
-  }
+    max-width: 54px;
+    text-align: center;
+    z-index: 1;
 
-  @media (min-width: $bp-desktop) {
-    font-size: 14px;
-    line-height: 1.23;
+    @media (min-width: $bp-tablet) {
+      font-size: 14px;
+      max-width: 127px;
+    }
+
+    @media (min-width: $bp-desktop) {
+      font-size: 14px;
+      line-height: 1.23;
+    }
   }
 }

@@ -3,17 +3,20 @@
   font-size: 36px;
   line-height: 1.67;
   font-weight: normal;
-  border-top: 1px solid #ededed;
   border-bottom: 1px solid #ededed;
   margin: 0;
-  padding: 30px 0;
+  padding-top: 17px;
+  padding-bottom: 26px;
+  padding-right: 20px;
+  padding-left: 20px;
 
   @media (min-width: $bp-tablet) {
     border: none;
     font-size: 60px;
     line-height: 1;
     padding: 0;
-    padding-top: 65px;
+    padding-top: 28px;
+    padding-left: 30px;
   }
 
   @media (min-width: $bp-desktop) {
@@ -23,19 +26,22 @@
 
 .catalog__list {
   list-style: none;
-  padding: 0;
   margin: 0;
+  padding: 0;
 
   @media (min-width: $bp-tablet) {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding: 0 30px;
+    padding-top: 26px;
   }
 }
 
 .catalog__item {
-  padding: 25px 0;
+  padding: 0 20px;
   border-bottom: 1px solid #ededed;
+  padding-bottom: 24px;
 
   @media (min-width: $bp-tablet) {
     display: flex;
@@ -47,6 +53,7 @@
     align-items: center;
     background-color: #f2f2f2;
     padding: 38px;
+    margin: 0;
     margin-top: 140px;
     position: relative;
   }
