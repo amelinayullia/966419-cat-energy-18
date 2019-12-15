@@ -32,8 +32,9 @@
   }
 
   @media (min-width: $bp-desktop) {
-    min-width: 285px;
-    padding-right: 40px;
+    min-width: 325px;
+    padding-right: 38px;
+    padding-top: 10px;
   }
 }
 
@@ -47,6 +48,7 @@
   @media (min-width: $bp-desktop) {
     max-width: 245px;
     margin-left: auto;
+    margin-right: 10px;
   }
 }
 
@@ -72,6 +74,10 @@
     @media (min-width: $bp-tablet) {
       min-width: 42px;
       text-align: right;
+    }
+
+    @media (min-width: $bp-desktop) {
+      text-align: left;
     }
   }
 }
