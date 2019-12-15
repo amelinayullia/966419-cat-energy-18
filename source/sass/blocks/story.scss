@@ -11,8 +11,12 @@
 
   @media (min-width: $bp-desktop) {
     display: flex;
-    margin-top: 0;
+    flex-direction: column;
     position: relative;
+    padding: 0;
+    padding-left: 110px;
+    padding-right: 110px;
+    padding-bottom: 75px;
   }
 
   .story__example {
@@ -26,6 +30,10 @@
       font-size: 60px;
       line-height: 1;
       padding-left: 30px;
+    }
+
+    @media (min-width: $bp-desktop) {
+      padding-left: 0;
     }
   }
 
@@ -49,9 +57,10 @@
     }
 
     @media (min-width: $bp-desktop) {
-      margin-top: 140px;
+      margin-top: 147px;
       width: 431px;
       margin-bottom: 70px;
+      padding: 0;
     }
   }
 
@@ -61,10 +70,6 @@
 
     @media (min-width: $bp-tablet) {
       min-width: 366px;
-    }
-
-    @media (min-width: $bp-desktop) {
-      justify-content: stretch;
     }
   }
 
@@ -84,6 +89,20 @@
       max-width: 175px;
       padding-top: 7px;
       text-align: right;
+    }
+
+    @media (min-width: $bp-desktop) {
+      margin: 0;
+      text-align: left;
+      max-width: 330px;
+      padding-top: 50px;
+    }
+  }
+
+  .story-results__cost {
+    @media (min-width: $bp-desktop) {
+      display: inline-block;
+      margin-left: 60px;
     }
   }
 
@@ -107,6 +126,11 @@
       padding: 0 70px;
       margin-top: 19px;
     }
+
+    @media (min-width: $bp-desktop) {
+      margin-top: 40px;
+      padding: 0;
+    }
   }
 
   .story__results-wrapper {
@@ -116,6 +140,9 @@
 
     @media (min-width: $bp-desktop) {
       flex-direction: column;
+      margin: 0;
+      padding: 0;
+      max-width: 365px;
     }
   }
 
@@ -129,7 +156,7 @@
     }
 
     @media (min-width: $bp-desktop) {
-      width: 500px;
+      width: 550px;
       height: 517px;
     }
   }
@@ -151,8 +178,11 @@
 
     @media (min-width: $bp-desktop) {
       position: absolute;
-      top: -60px;
-      right: 150px;
+      top: -52px;
+      right: 110px;
+      margin: 0;
+      padding: 0;
+      min-width: 570px;
     }
   }
 }

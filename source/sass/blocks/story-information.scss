@@ -23,6 +23,10 @@
       width: 162px;
       height: 72px;
     }
+
+    @media (min-width: $bp-desktop) {
+      margin-right: 42px;
+    }
   }
 
   .story-information__how {
@@ -42,6 +46,7 @@
     @media (min-width: $bp-desktop) {
       font-size: 30px;
       line-height: 1.23;
+      padding-bottom: 9px;
     }
   }
 

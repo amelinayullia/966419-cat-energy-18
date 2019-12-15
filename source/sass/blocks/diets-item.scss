@@ -9,6 +9,7 @@
 
   @media (min-width: $bp-desktop) {
     max-width: 570px;
+    max-height: 372px;
   }
 
   &::after {
@@ -62,7 +63,7 @@
       width: 71px;
       height: 97px;
       left: 65px;
-      top: 47px;
+      top: 45px;
     }
   }
 
@@ -85,7 +86,7 @@
       width: 134px;
       height: 57px;
       left: 32px;
-      top: 73px;
+      top: 70px;
     }
   }
 }
@@ -108,7 +109,8 @@
   }
 
   @media (min-width: $bp-desktop) {
-    padding-left: 165px;
+    padding-left: 160px;
+    padding-top: 25px;
   }
 }
 
@@ -132,8 +134,12 @@
 
   @media (min-width: $bp-desktop) {
     padding: 0;
-    padding-top: 75px;
+    padding-top: 72px;
     width: 100%;
+
+    &--fat {
+      max-width: 464px;
+    }
   }
 }
 
@@ -154,6 +160,10 @@
     padding-top: 35px;
   }
 
+  @media (min-width: $bp-desktop) {
+    padding-top: 30px;
+  }
+
   &::after {
     content: "";
     background-image: url("../img/icon-right-arrow-long.svg");
@@ -167,6 +177,11 @@
     @media (min-width: $bp-tablet) {
       left: 130px;
       top: 40px;
+    }
+
+    @media (min-width: $bp-desktop) {
+      left: 130px;
+      top: 35px;
     }
   }
 }
