@@ -3,6 +3,10 @@
     margin-top: 70px;
   }
 
+  @media (min-width: $bp-desktop) {
+    margin-top: 75px;
+  }
+
   .additional-products__title {
     font-family: "Oswald", "Arial", sans-serif;
     font-size: 24px;
@@ -38,6 +42,11 @@
         position: absolute;
         top: 22px;
         left: -30px;
+
+        @media (min-width: $bp-desktop) {
+          left: -110px;
+          width: 70px;
+        }
       }
 
       &::after {
@@ -45,7 +54,16 @@
         height: 3px;
         right: -30px;
         top: 22px;
+
+        @media (min-width: $bp-desktop) {
+          right: -110px;
+          width: 955px;
+        }
       }
+    }
+
+    @media (min-width: $bp-desktop) {
+      padding: 0;
     }
   }
 
@@ -56,7 +74,7 @@
 
     @media (min-width: $bp-desktop) {
       min-width: 905px;
-      margin-right: 80px;
+      margin-right: 70px;
     }
   }
 
@@ -86,7 +104,7 @@
 
     @media (min-width: $bp-desktop) {
       display: flex;
-      margin-bottom: 85px;
+      margin-bottom: 90px;
     }
   }
 }

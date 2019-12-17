@@ -14,16 +14,13 @@
 
   @media (min-width: $bp-desktop) {
     position: absolute;
-    bottom: -1320px;
-    left: 100px;
+    left: 110px;
+    top: 90px;
     background-color: #ffffff;
     min-width: 570px;
     z-index: 1;
-  }
-
-  &--catalog,
-  &--form {
-    background-color: #f2f2f2;
+    padding-left: 76px;
+    padding-right: 76px;
   }
 
   .contacts-inner__invite {
@@ -51,6 +48,11 @@
       line-height: 1.25;
       text-align: right;
       max-width: 165px;
+    }
+
+    @media (min-width: $bp-desktop) {
+      text-align: left;
+      max-width: 168px;
     }
   }
 

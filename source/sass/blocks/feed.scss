@@ -15,6 +15,10 @@
     padding: 0 60px;
     margin-top: 125px;
   }
+
+  @media (min-width: $bp-desktop) {
+    padding: 0 20px;
+  }
 }
 
 .feed__info-list {
@@ -62,6 +66,13 @@
     position: absolute;
     top: -45px;
     left: 80px;
+  }
+
+  @media (min-width: $bp-desktop) {
+    min-width: 245px;
+    height: 280px;
+    top: -130px;
+    left: 0;
   }
 }
 

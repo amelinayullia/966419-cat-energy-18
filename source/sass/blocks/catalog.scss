@@ -1,64 +1,74 @@
-.catalog__title {
-  font-family: "Oswald", "Arial", sans-serif;
-  font-size: 36px;
-  line-height: 1.67;
-  font-weight: normal;
-  border-bottom: 1px solid #ededed;
-  margin: 0;
-  padding-top: 17px;
-  padding-bottom: 26px;
-  padding-right: 20px;
-  padding-left: 20px;
+.catalog {
+  margin-top: 75px;
 
-  @media (min-width: $bp-tablet) {
-    border: none;
-    font-size: 60px;
-    line-height: 1;
-    padding: 0;
-    padding-top: 28px;
-    padding-left: 30px;
-  }
-
-  @media (min-width: $bp-desktop) {
-    padding-top: 83px;
-  }
-}
-
-.catalog__list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-
-  @media (min-width: $bp-tablet) {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 0 30px;
-    padding-top: 26px;
-  }
-}
-
-.catalog__item {
-  padding: 0 20px;
-  border-bottom: 1px solid #ededed;
-  padding-bottom: 24px;
-
-  @media (min-width: $bp-tablet) {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    width: 325px;
-    min-height: 430px;
-    border: none;
-    align-items: center;
-    background-color: #f2f2f2;
-    padding: 38px;
+  .catalog__title {
+    font-family: "Oswald", "Arial", sans-serif;
+    font-size: 36px;
+    line-height: 1.67;
+    font-weight: normal;
+    border-bottom: 1px solid #ededed;
     margin: 0;
-    margin-top: 140px;
-    position: relative;
+    padding-top: 17px;
+    padding-bottom: 26px;
+    padding-right: 20px;
+    padding-left: 20px;
+
+    @media (min-width: $bp-tablet) {
+      border: none;
+      font-size: 60px;
+      line-height: 1;
+      padding: 0;
+      padding-top: 28px;
+      padding-left: 30px;
+    }
+
+    @media (min-width: $bp-desktop) {
+      padding: 0 110px;
+    }
   }
 
-  @media (min-width: $bp-desktop) {
-    max-width: 245px;
+  .catalog__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    @media (min-width: $bp-tablet) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding: 0 30px;
+      padding-top: 26px;
+    }
+
+    @media (min-width: $bp-desktop) {
+      padding: 0 110px;
+      padding-top: 24px;
+    }
+  }
+
+  .catalog__item {
+    padding: 0 20px;
+    border-bottom: 1px solid #ededed;
+    padding-bottom: 24px;
+
+    @media (min-width: $bp-tablet) {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      width: 325px;
+      min-height: 430px;
+      border: none;
+      align-items: center;
+      background-color: #f2f2f2;
+      padding: 38px;
+      margin: 0;
+      margin-top: 140px;
+      position: relative;
+    }
+
+    @media (min-width: $bp-desktop) {
+      max-width: 245px;
+      margin-top: 142px;
+    }
   }
 }
