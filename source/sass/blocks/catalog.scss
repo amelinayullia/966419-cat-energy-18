@@ -1,5 +1,7 @@
 .catalog {
-  margin-top: 75px;
+  @media (min-width: $bp-desktop) {
+    margin-top: 72px;
+  }
 
   .catalog__title {
     font-family: "Oswald", "Arial", sans-serif;

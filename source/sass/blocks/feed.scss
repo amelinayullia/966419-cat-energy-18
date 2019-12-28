@@ -61,11 +61,15 @@
 
 .feed__image {
   @media (min-width: $bp-tablet) {
-    min-width: 160px;
-    height: 170px;
+    min-width: 318px;
+    min-height: 170px;
     position: absolute;
     top: -45px;
-    left: 80px;
+    left: 3px;
+
+    &--big {
+      top: -81px;
+    }
   }
 
   @media (min-width: $bp-desktop) {
