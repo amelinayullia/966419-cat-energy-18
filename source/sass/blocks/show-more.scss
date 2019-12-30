@@ -65,7 +65,7 @@
     font-size: 12px;
     color: #444444;
     line-height: 1.33;
-    padding-top: 6px;
+    padding-top: 8px;
     margin: 0;
     padding-bottom: 22px;
 
@@ -76,6 +76,10 @@
       padding-top: 28px;
       max-width: 167px;
     }
+
+    @media (min-width: $bp-desktop) {
+      padding-top: 26px;
+    }
   }
 
   .show-more__button {
@@ -84,11 +88,12 @@
     font-size: 16px;
 
     @media (min-width: $bp-tablet) {
-      margin-top: 59px;
+      margin-top: 64px;
+      padding: 8px 15px;
     }
 
     @media (min-width: $bp-desktop) {
-      margin-top: 59px;
+      margin-top: 65px;
     }
   }
 }
