@@ -92,6 +92,10 @@
       &--checkbox {
         min-width: 245px;
       }
+
+      &--radio {
+        padding-bottom: 17px;
+      }
     }
   }
 
@@ -100,7 +104,7 @@
     line-height: 1.13;
     color: #444444;
     text-transform: uppercase;
-    padding: 13px;
+    padding: 13px 18px;
     margin-left: 11px;
     border: 1px solid #cdcdcd;
     flex-grow: 1;
@@ -118,8 +122,8 @@
     font-size: 24px;
     line-height: 1;
     padding: 0;
-    padding-top: 30px;
-    margin-bottom: 32px;
+    padding-top: 29px;
+    margin-bottom: 33px;
     position: relative;
 
     @media (min-width: $bp-tablet) {
@@ -129,7 +133,7 @@
     }
 
     &--textarea {
-      padding-top: 17px;
+      padding-top: 15px;
     }
 
     &::before {
@@ -293,8 +297,8 @@
   .form__introduction,
   .form__program {
     border-bottom: 1px solid #ededed;
-    padding-top: 20px;
-    padding-bottom: 12px;
+    padding-top: 18px;
+    padding-bottom: 10px;
 
     &--radio {
       padding-top: 11px;
@@ -304,7 +308,7 @@
     @media (min-width: $bp-tablet) {
       padding: 0;
       border: none;
-      margin-bottom: 74px;
+      margin-bottom: 75px;
     }
 
     @media (min-width: $bp-desktop) {
@@ -316,7 +320,10 @@
   .form__program {
     @media (min-width: $bp-tablet) {
       border: 1px solid #ededed;
-      padding: 17px 28px;
+      padding-top: 17px;
+      padding-bottom: 20px;
+      padding-right: 28px;
+      padding-left: 28px;
     }
 
     &--radio {
@@ -329,13 +336,13 @@
 
   .form__contacts {
     @media (min-width: $bp-tablet) {
-      margin-top: 77px;
-      margin-bottom: 27px;
+      margin-top: 75px;
+      margin-bottom: 29px;
     }
 
     @media (min-width: $bp-desktop) {
       margin-top: 50px;
-      margin-bottom: 30px;
+      margin-bottom: 32px;
     }
   }
 
@@ -361,7 +368,7 @@
     @media (min-width: $bp-tablet) {
       display: flex;
       align-items: center;
-      margin-top: 20px;
+      margin-top: 21px;
     }
 
     @media (min-width: $bp-desktop) {
@@ -382,9 +389,14 @@
   }
 
   .form-inner__introduction-program {
+    @media (min-width: $bp-tablet) {
+      margin: 0 30px;
+    }
+
     @media (min-width: $bp-desktop) {
       display: flex;
       justify-content: space-between;
+      margin: 0;
     }
   }
 
@@ -409,6 +421,7 @@
       width: 18px;
       height: 18px;
       left: 11px;
+      top: 18px;
     }
   }
 
@@ -452,7 +465,7 @@
       width: 21px;
       height: 21px;
       right: 12px;
-      top: 14px;
+      top: 13px;
 
       @media (min-width: $bp-desktop) {
         right: 18px;
