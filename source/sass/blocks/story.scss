@@ -1,11 +1,11 @@
 .story {
   background-color: #f2f2f2;
-  padding-top: 20px;
+  padding-top: 17px;
   padding-bottom: 35px;
 
   @media (min-width: $bp-tablet) {
     padding-top: 22px;
-    padding-bottom: 67px;
+    padding-bottom: 68px;
     background: linear-gradient(to top, #f2f2f2 462px, #ffffff 0, #ffffff);
   }
 
@@ -40,7 +40,7 @@
   .story__description {
     margin: 0;
     margin-top: 23px;
-    margin-bottom: 26px;
+    margin-bottom: 25px;
     font-size: 14px;
     color: #444444;
     letter-spacing: 0.1px;
@@ -123,13 +123,14 @@
 
     @media (min-width: $bp-tablet) {
       justify-content: space-between;
-      padding: 0 70px;
-      margin-top: 19px;
+      padding: 0 69px;
+      margin-top: 20px;
     }
 
     @media (min-width: $bp-desktop) {
-      margin-top: 40px;
+      margin-top: 38px;
       padding: 0;
+      margin-left: 66px;
     }
   }
 
@@ -150,14 +151,9 @@
     height: 238px;
 
     @media (min-width: $bp-tablet) {
-      width: 670px;
-      height: 518px;
-      margin: 0 auto;
-    }
-
-    @media (min-width: $bp-desktop) {
-      width: 550px;
+      width: 636px;
       height: 517px;
+      margin: 0 auto;
     }
   }
 

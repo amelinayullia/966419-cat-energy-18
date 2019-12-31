@@ -1,5 +1,7 @@
 .catalog {
-  margin-top: 75px;
+  @media (min-width: $bp-desktop) {
+    margin-top: 72px;
+  }
 
   .catalog__title {
     font-family: "Oswald", "Arial", sans-serif;
@@ -8,8 +10,8 @@
     font-weight: normal;
     border-bottom: 1px solid #ededed;
     margin: 0;
-    padding-top: 17px;
-    padding-bottom: 26px;
+    padding-top: 15px;
+    padding-bottom: 28px;
     padding-right: 20px;
     padding-left: 20px;
 

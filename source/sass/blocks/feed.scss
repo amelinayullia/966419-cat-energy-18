@@ -18,13 +18,14 @@
 
   @media (min-width: $bp-desktop) {
     padding: 0 20px;
+    margin-top: 123px;
   }
 }
 
 .feed__info-list {
   list-style: none;
   padding: 0;
-  margin-top: 13px;
+  margin-top: 15px;
 
   @media (min-width: $bp-tablet) {
     margin-top: 22px;
@@ -60,19 +61,27 @@
 }
 
 .feed__image {
+  max-width: 140px;
+
   @media (min-width: $bp-tablet) {
-    min-width: 160px;
-    height: 170px;
+    min-width: 318px;
     position: absolute;
     top: -45px;
-    left: 80px;
+    left: 3px;
+
+    &--big {
+      top: -81px;
+    }
   }
 
   @media (min-width: $bp-desktop) {
     min-width: 245px;
-    height: 280px;
-    top: -130px;
+    top: -48px;
     left: 0;
+
+    &--big {
+      top: -84px;
+    }
   }
 }
 

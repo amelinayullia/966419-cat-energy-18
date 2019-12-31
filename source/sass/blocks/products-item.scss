@@ -19,7 +19,7 @@
   line-height: 1;
   color: #444444;
   margin: 0;
-  padding-top: 15px;
+  padding-top: 14px;
   padding-bottom: 14px;
   display: flex;
   justify-content: space-between;
@@ -28,7 +28,7 @@
     padding: 0;
     margin-left: auto;
     font-size: 16px;
-    line-height: 1.43;
+    line-height: 1.5;
   }
 
   @media (min-width: $bp-desktop) {
@@ -55,7 +55,7 @@
 .products-item__inner {
   @media (min-width: $bp-tablet) {
     display: flex;
-    padding-bottom: 23px;
+    padding-bottom: 22px;
   }
 
   @media (min-width: $bp-desktop) {
