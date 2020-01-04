@@ -11,4 +11,12 @@
   background-color: #68b738;
   cursor: pointer;
   width: 100%;
+
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
 }

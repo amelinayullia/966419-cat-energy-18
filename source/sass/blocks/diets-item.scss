@@ -164,6 +164,18 @@
     padding-top: 30px;
   }
 
+  &:hover {
+    &::after {
+      background-image: url("../img/icon-right-arrow-verylong.svg");
+      width: 34px;
+      transition: all 0.3s ease-out;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
   &::after {
     content: "";
     background-image: url("../img/icon-right-arrow-long.svg");

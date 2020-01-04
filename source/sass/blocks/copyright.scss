@@ -4,6 +4,10 @@
   line-height: 1;
   padding-top: 9px;
 
+  &:active {
+    opacity: 0.3;
+  }
+
   @media (min-width: $bp-tablet) {
     padding-right: 23px;
     padding-top: 0;
@@ -13,4 +17,12 @@
 .copyright__image {
   fill: #666666;
   display: block;
+
+  &:hover {
+    fill: #68b738;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
