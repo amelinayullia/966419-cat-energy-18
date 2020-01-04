@@ -13,14 +13,14 @@
     color: #222222;
     text-transform: uppercase;
     display: flex;
-    margin-bottom: 13px;
+    margin-bottom: 16px;
     align-items: center;
     position: relative;
     cursor: pointer;
 
     @media (min-width: $bp-tablet) {
       font-size: 20px;
-      margin-bottom: 21px;
+      margin-bottom: 24px;
     }
 
     &--checkbox,
@@ -108,8 +108,8 @@
     line-height: 1.13;
     color: #444444;
     text-transform: uppercase;
-    padding: 13px 18px;
-    margin-left: 11px;
+    padding: 13px;
+    margin-left: 15px;
     box-shadow: 0 0 0 1px rgba(205, 205, 205, 0.5);
     border: 0;
     flex-grow: 1;
@@ -136,7 +136,7 @@
     font-size: 24px;
     line-height: 1;
     padding: 0;
-    padding-top: 29px;
+    padding-top: 30px;
     margin-bottom: 33px;
     position: relative;
 
@@ -147,7 +147,7 @@
     }
 
     &--textarea {
-      padding-top: 15px;
+      padding-top: 14px;
     }
 
     &::before {
@@ -169,7 +169,7 @@
 
     &--textarea::before {
       @media (min-width: $bp-tablet) {
-        top: 39px;
+        top: 36px;
       }
     }
 
@@ -207,7 +207,7 @@
 
       @media (min-width: $bp-tablet) {
         width: 480px;
-        top: 39px;
+        top: 36px;
         right: -518px;
       }
 
@@ -311,8 +311,8 @@
   .form__introduction,
   .form__program {
     border-bottom: 1px solid #ededed;
-    padding-top: 18px;
-    padding-bottom: 10px;
+    padding-top: 20px;
+    padding-bottom: 8px;
 
     &--radio {
       padding-top: 11px;
@@ -351,11 +351,11 @@
   .form__contacts {
     @media (min-width: $bp-tablet) {
       margin-top: 75px;
-      margin-bottom: 29px;
+      margin-bottom: 25px;
     }
 
     @media (min-width: $bp-desktop) {
-      margin-top: 50px;
+      margin-top: 48px;
       margin-bottom: 32px;
     }
   }
@@ -382,11 +382,11 @@
     @media (min-width: $bp-tablet) {
       display: flex;
       align-items: center;
-      margin-top: 21px;
+      margin-top: 18px;
     }
 
     @media (min-width: $bp-desktop) {
-      margin-top: 29px;
+      margin-top: 26px;
       padding: 0;
     }
   }
