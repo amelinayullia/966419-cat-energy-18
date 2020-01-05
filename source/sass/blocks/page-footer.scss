@@ -7,15 +7,19 @@
 
   @media (min-width: $bp-tablet) {
     flex-direction: row;
-    padding-top: 48px;
+    padding-top: 49px;
     padding-bottom: 63px;
+  }
+
+  @media (min-width: $bp-desktop) {
+    padding-top: 55px;
   }
 
   .page-footer__social {
     display: flex;
-    padding: 21px;
+    padding: 20px;
     margin-top: 32px;
-    margin-bottom: 21px;
+    margin-bottom: 19px;
     border-top: 1px solid rgba(0, 0, 0, 0.1);
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 

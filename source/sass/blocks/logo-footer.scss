@@ -2,3 +2,13 @@
   display: flex;
   justify-content: center;
 }
+
+.logo-footer__image {
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}

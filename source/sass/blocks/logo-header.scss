@@ -21,6 +21,14 @@
   }
 
   .logo-header__image {
+    &:hover {
+      opacity: 0.8;
+    }
+
+    &:active {
+      opacity: 0.6;
+    }
+
     @media (min-width: $bp-tablet) {
       width: 174px;
       height: 69px;

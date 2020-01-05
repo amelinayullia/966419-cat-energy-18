@@ -39,8 +39,8 @@
 
   .story__description {
     margin: 0;
-    margin-top: 23px;
-    margin-bottom: 25px;
+    margin-top: 25px;
+    margin-bottom: 26px;
     font-size: 14px;
     color: #444444;
     letter-spacing: 0.1px;
@@ -120,11 +120,18 @@
   .story__image-toggle {
     display: flex;
     justify-content: center;
+    font-family: "Oswald", "Arial", sans-serif;
+    line-height: 1.25;
+    text-transform: uppercase;
+    margin-top: 35px;
+    position: relative;
 
     @media (min-width: $bp-tablet) {
       justify-content: space-between;
       padding: 0 69px;
       margin-top: 20px;
+      font-size: 20px;
+      line-height: 1;
     }
 
     @media (min-width: $bp-desktop) {

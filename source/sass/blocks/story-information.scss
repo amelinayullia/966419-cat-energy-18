@@ -54,18 +54,23 @@
     font-size: 12px;
     line-height: 1;
     color: #444444;
-    max-width: 54px;
+    max-width: 88px;
     text-align: center;
     z-index: 1;
+    padding: 0 17px;
+    background-color: #f2f2f2;
 
     @media (min-width: $bp-tablet) {
       font-size: 14px;
-      max-width: 127px;
+      max-width: 143px;
+      padding: 0 8px;
+      background-color: #ffffff;
     }
 
     @media (min-width: $bp-desktop) {
       font-size: 14px;
       line-height: 1.23;
+      background-color: #f2f2f2;
     }
   }
 }

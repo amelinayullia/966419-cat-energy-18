@@ -47,30 +47,4 @@
       padding-top: 24px;
     }
   }
-
-  .catalog__item {
-    padding: 0 20px;
-    border-bottom: 1px solid #ededed;
-    padding-bottom: 24px;
-
-    @media (min-width: $bp-tablet) {
-      display: flex;
-      flex-wrap: wrap;
-      flex-direction: column;
-      width: 325px;
-      min-height: 430px;
-      border: none;
-      align-items: center;
-      background-color: #f2f2f2;
-      padding: 38px;
-      margin: 0;
-      margin-top: 140px;
-      position: relative;
-    }
-
-    @media (min-width: $bp-desktop) {
-      max-width: 245px;
-      margin-top: 142px;
-    }
-  }
 }

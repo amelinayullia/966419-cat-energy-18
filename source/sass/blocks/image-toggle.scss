@@ -1,89 +1,90 @@
 .image-toggle {
-  font-family: "Oswald", "Arial", sans-serif;
-  line-height: 1.25;
-  text-transform: uppercase;
-  margin-top: 35px;
-  position: relative;
-
-  @media (min-width: $bp-tablet) {
-    font-size: 20px;
-    line-height: 1;
-  }
-
-  @media (min-width: $bp-desktop) {
-    margin-top: 55px;
-  }
-
-  .image-toggle__became {
-    margin-left: 60px;
+  &::before {
+    content: "";
+    width: 84px;
+    height: 14px;
+    border: 1px solid #cdcdcd;
+    background-color: #ffffff;
+    position: absolute;
+    top: 3px;
+    left: 118px;
+    border-radius: 10px;
 
     @media (min-width: $bp-tablet) {
-      border-bottom: 1px solid #111111;
-      padding-bottom: 7px;
-      margin: 0;
+      left: 138px;
+      width: 428px;
+      height: 6px;
+      top: 8px;
+      background-color: #dcdcdc;
+    }
+
+    @media (min-width: $bp-desktop) {
+      left: 70px;
     }
   }
 
-  .image-toggle__was {
-    margin-right: 60px;
-    padding-left: 5px;
+  &::after {
+    content: "";
+    width: 35px;
+    height: 6px;
+    background-color: #68b738;
+    position: absolute;
+    top: 7px;
+    left: 125px;
+    border-radius: 3px;
 
     @media (min-width: $bp-tablet) {
-      border-bottom: 1px solid #111111;
+      display: none;
+    }
+  }
+
+  .image-toggle__text {
+    @media (min-width: $bp-tablet) {
+      border-bottom: 1px dashed rgba(17, 17, 17, 0.23);
       padding: 0;
       padding-bottom: 7px;
-      margin: 0;
-    }
 
-    &::before {
-      content: "";
-      width: 84px;
-      height: 14px;
-      border: 1px solid #cdcdcd;
-      background-color: #ffffff;
-      position: absolute;
-      top: 3px;
-      left: 118px;
-      border-radius: 10px;
-
-      @media (min-width: $bp-tablet) {
-        left: 138px;
-        width: 428px;
-        height: 6px;
-        top: 8px;
-        background-color: #dcdcdc;
+      &:hover {
+        border-bottom: 1px solid rgba(17, 17, 17, 0.4);
       }
 
-      @media (min-width: $bp-desktop) {
-        left: 70px;
+      &:active {
+        border: none;
       }
     }
 
-    &::after {
-      content: "";
-      width: 35px;
-      height: 6px;
+    &--became {
+      margin-left: 60px;
+    }
+
+    &--was {
+      margin-right: 60px;
+    }
+  }
+
+  .image-toggle__slider {
+    position: absolute;
+    display: none;
+
+    @media (min-width: $bp-tablet) {
       background-color: #68b738;
-      position: absolute;
-      top: 7px;
-      left: 125px;
-      border-radius: 3px;
+      cursor: pointer;
+      transform: translateX(-50%);
+      display: block;
+      width: 34px;
+      height: 34px;
+      top: -6px;
+      left: 50%;
+      border-radius: 50%;
+      border: 13px solid #ffffff;
+      box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
 
-      @media (min-width: $bp-tablet) {
-        content: "";
-        width: 34px;
-        height: 34px;
-        background-color: #68b738;
-        position: absolute;
-        top: -6px;
-        left: 337px;
-        border-radius: 50%;
-        border: 13px solid #ffffff;
-        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
+      &:hover {
+        box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.25);
       }
 
-      @media (min-width: $bp-desktop) {
-        left: 268px;
+      &:active {
+        box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.3), 0 0 0 2px #68b738;
       }
     }
   }
