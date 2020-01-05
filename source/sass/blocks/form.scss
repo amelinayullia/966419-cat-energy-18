@@ -115,6 +115,7 @@
     flex-grow: 1;
     font-size: 16px;
     outline: 0;
+    padding-right: 40px;
 
     &:hover {
       box-shadow: 0 0 0 1px #cdcdcd;
@@ -122,6 +123,11 @@
 
     &:focus {
       box-shadow: 0 0 0 2px #444444;
+    }
+
+    &--email:focus + .form__icon--email,
+    &--tel:focus + .form__icon--tel {
+      fill: #68b738;
     }
 
     @media (min-width: $bp-tablet) {
@@ -467,11 +473,7 @@
   .form__icon {
     position: absolute;
 
-    &:active {
-      fill: #68b738;
-    }
-
-    &--mail {
+    &--email {
       width: 18px;
       height: 14px;
       right: 15px;
