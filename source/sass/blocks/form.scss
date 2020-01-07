@@ -20,7 +20,11 @@
 
     @media (min-width: $bp-tablet) {
       font-size: 20px;
-      margin-bottom: 24px;
+      margin-bottom: 22px;
+    }
+
+    @media (min-width: $bp-desktop) {
+      margin-bottom: 21px;
     }
 
     &--checkbox,
@@ -109,13 +113,12 @@
     color: #444444;
     text-transform: uppercase;
     padding: 13px;
-    margin-left: 15px;
+    margin-left: 16px;
     box-shadow: 0 0 0 1px rgba(205, 205, 205, 0.5);
     border: 0;
     flex-grow: 1;
     font-size: 16px;
     outline: 0;
-    padding-right: 40px;
 
     &:hover {
       box-shadow: 0 0 0 1px #cdcdcd;
@@ -131,9 +134,27 @@
     }
 
     @media (min-width: $bp-tablet) {
-      margin-left: 17px;
+      margin-left: 19px;
       font-size: 20px;
+      padding: 14px;
       padding-left: 18px;
+    }
+
+    &--email,
+    &--tel {
+      padding-right: 40px;
+      margin-left: 12px;
+
+      @media (min-width: $bp-tablet) {
+        padding-right: 40px;
+        margin-left: 17px;
+      }
+    }
+
+    &--email {
+      @media (min-width: $bp-tablet) {
+        padding-left: 24px;
+      }
     }
   }
 
@@ -328,7 +349,7 @@
     @media (min-width: $bp-tablet) {
       padding: 0;
       border: none;
-      margin-bottom: 75px;
+      margin-bottom: 73px;
     }
 
     @media (min-width: $bp-desktop) {
@@ -357,12 +378,12 @@
   .form__contacts {
     @media (min-width: $bp-tablet) {
       margin-top: 75px;
-      margin-bottom: 25px;
+      margin-bottom: 33px;
     }
 
     @media (min-width: $bp-desktop) {
       margin-top: 48px;
-      margin-bottom: 32px;
+      margin-bottom: 38px;
     }
   }
 
@@ -392,7 +413,7 @@
     }
 
     @media (min-width: $bp-desktop) {
-      margin-top: 26px;
+      margin-top: 28px;
       padding: 0;
     }
   }
@@ -480,7 +501,7 @@
       top: 16px;
 
       @media (min-width: $bp-tablet) {
-        top: 20px;
+        top: 18px;
       }
 
       @media (min-width: $bp-desktop) {
@@ -494,6 +515,10 @@
       height: 21px;
       right: 12px;
       top: 13px;
+
+      @media (min-width: $bp-tablet) {
+        top: 17px;
+      }
 
       @media (min-width: $bp-desktop) {
         right: 18px;
@@ -509,7 +534,7 @@
     margin-bottom: 13px;
 
     @media (min-width: $bp-tablet) {
-      margin-bottom: 15px;
+      margin-bottom: 12px;
     }
 
     @media (min-width: $bp-desktop) {
