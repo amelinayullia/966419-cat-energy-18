@@ -125,6 +125,8 @@
     text-transform: uppercase;
     margin-top: 35px;
     position: relative;
+    padding-right: 59px;
+    padding-left: 63px;
 
     @media (min-width: $bp-tablet) {
       justify-content: space-between;
@@ -185,7 +187,7 @@
       right: 110px;
       margin: 0;
       padding: 0;
-      min-width: 570px;
+      width: 636px;
     }
   }
 }
