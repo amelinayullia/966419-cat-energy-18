@@ -4,6 +4,10 @@
 }
 
 .logo-footer__image {
+  @media (min-width: $bp-desktop) {
+    height: 40px;
+  }
+
   &:hover {
     opacity: 0.8;
   }

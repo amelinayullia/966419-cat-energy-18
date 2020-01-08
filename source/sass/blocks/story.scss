@@ -139,7 +139,7 @@
     @media (min-width: $bp-desktop) {
       margin-top: 38px;
       padding: 0;
-      margin-left: 66px;
+      margin-left: 80px;
     }
   }
 
@@ -160,9 +160,16 @@
     height: 238px;
 
     @media (min-width: $bp-tablet) {
-      width: 636px;
+      width: 675px;
       height: 517px;
       margin: 0 auto;
+      padding-right: 40px;
+    }
+
+    @media (min-width: $bp-desktop) {
+      width: 636px;
+      padding: 0;
+      margin: 0;
     }
   }
 
@@ -187,7 +194,7 @@
       right: 110px;
       margin: 0;
       padding: 0;
-      width: 636px;
+      width: 651px;
     }
   }
 }

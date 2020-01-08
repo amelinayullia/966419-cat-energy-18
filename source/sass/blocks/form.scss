@@ -128,6 +128,10 @@
       box-shadow: 0 0 0 2px #444444;
     }
 
+    &:focus:invalid {
+      box-shadow: 0 0 0 2px #ff8282;
+    }
+
     &--email:focus + .form__icon--email,
     &--tel:focus + .form__icon--tel {
       fill: #68b738;
@@ -138,6 +142,10 @@
       font-size: 20px;
       padding: 14px;
       padding-left: 18px;
+    }
+
+    @media (min-width: $bp-desktop) {
+      height: 51px;
     }
 
     &--email,
@@ -283,6 +291,7 @@
   }
 
   .form__textarea {
+    outline: none;
     width: 100%;
     min-height: 150px;
     resize: none;
@@ -292,7 +301,16 @@
     line-height: 1.13;
     color: #444444;
     text-transform: uppercase;
-    border: 1px solid #cdcdcd;
+    box-shadow: 0 0 0 1px rgba(205, 205, 205, 0.5);
+    border: 0;
+
+    &:hover {
+      box-shadow: 0 0 0 1px #cdcdcd;
+    }
+
+    &:focus {
+      box-shadow: 0 0 0 2px #444444;
+    }
 
     @media (min-width: $bp-tablet) {
       font-size: 20px;
@@ -383,7 +401,7 @@
 
     @media (min-width: $bp-desktop) {
       margin-top: 48px;
-      margin-bottom: 38px;
+      margin-bottom: 36px;
     }
   }
 
