@@ -5,9 +5,12 @@
   @media (min-width: $bp-tablet) {
     padding-top: 28px;
     padding-bottom: 74px;
+    max-width: 768px;
+    margin: 0 auto;
   }
 
   @media (min-width: $bp-desktop) {
+    max-width: 1440px;
     padding: 0 110px;
     margin-top: 60px;
     margin-bottom: 85px;
@@ -18,7 +21,6 @@
     font-size: 36px;
     font-weight: normal;
     line-height: 1.67;
-    margin: 0;
     padding-bottom: 25px;
 
     @media (min-width: $bp-tablet) {
@@ -35,7 +37,6 @@
   }
 
   .profile__preface {
-    margin: 0;
     font-family: "Oswald", "Arial", sans-serif;
     font-size: 14px;
     line-height: 1.29;

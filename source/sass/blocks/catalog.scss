@@ -9,13 +9,15 @@
     line-height: 1.67;
     font-weight: normal;
     border-bottom: 1px solid #ededed;
-    margin: 0;
     padding-top: 15px;
     padding-bottom: 28px;
     padding-right: 20px;
     padding-left: 20px;
+    max-width: 320px;
+    margin: 0 auto;
 
     @media (min-width: $bp-tablet) {
+      max-width: 768px;
       border: none;
       font-size: 60px;
       line-height: 1;
@@ -26,15 +28,18 @@
 
     @media (min-width: $bp-desktop) {
       padding: 0 110px;
+      max-width: 1440px;
     }
   }
 
   .catalog__list {
     list-style: none;
-    margin: 0;
     padding: 0;
+    max-width: 320px;
+    margin: 0 auto;
 
     @media (min-width: $bp-tablet) {
+      max-width: 768px;
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
@@ -45,6 +50,7 @@
     @media (min-width: $bp-desktop) {
       padding: 0 110px;
       padding-top: 24px;
+      max-width: 1440px;
     }
   }
 }
