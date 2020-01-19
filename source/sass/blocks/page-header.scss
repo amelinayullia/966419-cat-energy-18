@@ -1,5 +1,9 @@
 .page-header {
+  max-width: 320px;
+  margin: 0 auto;
+
   @media (min-width: $bp-tablet) {
+    max-width: 768px;
     display: flex;
     padding-top: 20px;
     padding-left: 30px;
@@ -8,6 +12,7 @@
   }
 
   @media (min-width: $bp-desktop) {
+    max-width: 1440px;
     padding-top: 53px;
     margin-right: auto;
     padding-left: 110px;
