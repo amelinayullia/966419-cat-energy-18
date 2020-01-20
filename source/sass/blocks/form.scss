@@ -302,6 +302,7 @@
     text-transform: uppercase;
     box-shadow: 0 0 0 1px rgba(205, 205, 205, 0.5);
     border: 0;
+    overflow: auto;
 
     &:hover {
       box-shadow: 0 0 0 1px #cdcdcd;
